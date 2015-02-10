@@ -1,0 +1,142 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Siguiente
+</name>
+</assembly>
+<members>
+<member name="M:Siguiente.MainWindow.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:Siguiente.MainWindow">
+	<summary>
+MainWindow
+</summary>
+</member><member name="M:Siguiente.FormSiguiente.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:Siguiente.FormSiguiente">
+	<summary>
+FormSiguiente
+</summary>
+</member><member name="M:Siguiente.Application.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="M:Siguiente.Application.Main">
+	<summary>
+Application Entry Point.
+</summary>
+</member><member name="T:Siguiente.Application">
+	<summary>
+Application
+</summary>
+</member><member name="M:Siguiente.RenombrarConsulta.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:Siguiente.RenombrarConsulta">
+	<summary>
+RenombrarConsulta
+</summary>
+</member><member name="M:Siguiente.FormSiguiente.Window_Loaded(System.Object,System.Windows.RoutedEventArgs)">
+	<summary>
+ Window_Loaded. Tras ser cargada la ventana, Rellenamos el ComboBox de consultas con todas las consultas
+ de nuestro centro e iniciamos el temporizador que actualizará nuestra lista de citas cada minuto
+ </summary>
+</member><member name="M:Siguiente.FormSiguiente.Button_Click_1(System.Object,System.Windows.RoutedEventArgs)">
+	<summary>
+ Button_Click_1. Al hacer clic sobre el botón Siguiente, marcamos la cita seleccionada como terminada.
+
+ </summary>
+</member><member name="M:Siguiente.FormSiguiente.ComboColas_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+	<summary>
+ ComboColas_SelectionChanged. Al cambiar de consulta, rellenamos el dataset con las citas de dicha consulta
+ y se la asignamos al médico, de esa forma, otro médico no podrá pasar consulta de esa misma especialidad
+ a la vez.
+
+ </summary>
+</member><member name="M:Siguiente.FormSiguiente.MenuItem_Click(System.Object,System.Windows.RoutedEventArgs)">
+	<summary>
+ MenuItem_Click. Muestro el menú de renombrar consulta
+
+ </summary>
+</member><member name="M:Siguiente.FormSiguiente.Window_Activated(System.Object,System.EventArgs)">
+	<summary>
+ Window_Activated. Al activar la ventana, Actualizo el nombre de la consulta seleccionada modificada desde
+ el cuadro de diálogo de Renombrar Consulta.
+
+ </summary>
+</member><member name="M:Siguiente.FormSiguiente.Window_Closing(System.Object,System.ComponentModel.CancelEventArgs)">
+	<summary>
+ Salir
+Cuadro de diálogo para cerrar aplicación.
+ </summary>
+</member><member name="M:Siguiente.FormSiguiente.Window_Closed(System.Object,System.EventArgs)">
+	<summary>
+ Window_Closed. Antes de cerrar finalmente la ventana, liberamos la consulta actual para que otro médico 
+ pueda acceder.
+
+ </summary>
+</member><member name="M:Siguiente.FormSiguiente.dispatcherTimer_Tick(System.Object,System.EventArgs)">
+	<summary>
+ dispatcherTimer_Tick. Actualizamos la lista de citas cada minuto.
+
+ </summary>
+</member><member name="P:Siguiente.My.Resources.Resources.ResourceManager">
+	<summary>
+  Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
+</summary>
+</member><member name="P:Siguiente.My.Resources.Resources.Culture">
+	<summary>
+  Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
+  búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
+</summary>
+</member><member name="T:Siguiente.My.Resources.Resources">
+	<summary>
+  Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
+</summary>
+</member><member name="M:Siguiente.RenombrarConsulta.Button2_Click(System.Object,System.Windows.RoutedEventArgs)">
+	<summary>
+ Button2_Click. Actualizamos el nombre de la consulta para mostrarla en el panel.
+ </summary>
+</member><member name="M:Siguiente.RenombrarConsulta.Window_Loaded(System.Object,System.Windows.RoutedEventArgs)">
+	<summary>
+ Window_Loaded. Al cargar la ventana, recuperamos el nombre de la consulta para modificarlo.
+ </summary>
+</member><member name="M:Siguiente.MainWindow.Button2_Click(System.Object,System.Windows.RoutedEventArgs)">
+	<summary>
+ Button2_Click. Botón encargado de validar los datos de acceso del médico
+ </summary>
+</member><member name="P:Siguiente.My.MyWpfExtension.Application">
+	<summary>
+ Devuelve el objeto de aplicación de la aplicación en ejecución
+ </summary>
+</member><member name="P:Siguiente.My.MyWpfExtension.Computer">
+	<summary>
+ Devuelve información sobre el equipo host.
+ </summary>
+</member><member name="P:Siguiente.My.MyWpfExtension.User">
+	<summary>
+ Devuelve información sobre el usuario actual.  Si desea ejecutar la aplicación con las credenciales 
+ del usuario de Windows actual, llame a My.User.InitializeWithWindowsUser().
+ </summary>
+</member><member name="P:Siguiente.My.MyWpfExtension.Log">
+	<summary>
+ Devuelve el registro de la aplicación. El archivo de configuración de la aplicación puede configurar los agentes de escucha.
+ </summary>
+</member><member name="P:Siguiente.My.MyWpfExtension.Windows">
+	<summary>
+ Devuelve la colección de Windows definida en el proyecto.
+ </summary>
+</member><member name="T:Siguiente.My.MyWpfExtension">
+	<summary>
+ Módulo utilizado para definir las propiedades disponibles en el espacio de nombres My de WPF
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

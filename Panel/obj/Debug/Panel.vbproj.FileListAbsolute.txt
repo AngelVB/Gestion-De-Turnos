@@ -1,0 +1,9 @@
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Panel\bin\Debug\Panel.exe.config
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Panel\obj\Debug\Panel.vbprojResolveAssemblyReference.cache
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Panel\obj\Debug\MainWindow.baml
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Panel\obj\Debug\MainWindow.g.vb
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Panel\obj\Debug\Application.g.vb
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Panel\obj\Debug\Panel_MarkupCompile.cache
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Panel\obj\Debug\Panel.g.resources
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Panel\obj\Debug\Panel.Resources.resources
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Panel\obj\Debug\Panel.vbproj.GenerateResource.Cache

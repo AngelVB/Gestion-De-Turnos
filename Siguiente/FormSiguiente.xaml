@@ -1,0 +1,93 @@
+﻿<Window x:Class="FormSiguiente"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Siguiente" Height="632" Width="456.55" SourceInitialized="Window_SourceInitialized" Loaded="Window_Loaded" ResizeMode="NoResize" Activated="Window_Activated" Closing="Window_Closing" Closed="Window_Closed">
+    <Window.Resources>
+        <Style TargetType="StackPanel" x:Key="Terminada">
+            <Style.Resources>
+                <Style TargetType="TextBlock">                  
+                    <Setter Property="Foreground" Value="White"/>
+                </Style>
+            </Style.Resources>
+        </Style>
+    </Window.Resources>
+    <Grid Margin="0,0,4,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="210"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Menu Grid.Row="0"  Margin="0,0,0,306">
+            <MenuItem Header="_Archivo" Height ="25">
+                <MenuItem Header="_Salir" Click="MenuItem_Click_1"/>
+            </MenuItem>
+            <MenuItem Name="MenuGestionItem" Header="_Gestión">
+                <StackPanel Orientation="Horizontal" Width="189">
+                    <Label Width="42" Background="#FFF0F0F0" Height="23">Cola</Label>
+                    <ComboBox ItemsSource="{Binding}"  Name="ComboColas" Width="143" Margin="0,0,0,0" DisplayMemberPath="NumMesa" SelectedValuePath="Id" />
+                </StackPanel>
+                <Separator/>
+                <MenuItem Header="Nombre Consulta" Click="MenuItem_Click"/>
+            </MenuItem>
+        </Menu>
+        <StackPanel Orientation="Horizontal" Height="60" Margin="0,30,0,246">
+            <StackPanel Orientation="Vertical" Width="222">
+                <StackPanel Orientation="Horizontal" Height="30" >
+                    <TextBlock  Text="Especialidad: " Width="75" FontWeight="Bold"/>
+                    <TextBlock x:Name="txtEspecialidad" Text="{Binding}" Width="138" FontSize="14"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Height="30" >
+                    <TextBlock  Text="Nombre Consulta: " Width="111" FontWeight="Bold"/>
+                    <TextBlock x:Name="txtNombreConsulta" Text="{Binding}" Width="31" FontSize="14"/>
+                </StackPanel>
+            </StackPanel>
+            <TextBlock x:Name="txtFecha" Text="{Binding}" Height="30" Width="215" HorizontalAlignment="Right" VerticalAlignment="Top" FontSize="20" TextAlignment="Right" FontWeight="Bold" Padding="0,0,5,0"/>
+        </StackPanel>
+        <ListView Name="DGCitas" ItemsSource="{Binding Path=tabla}" Margin="0,90,10,53" Grid.RowSpan="3" ScrollViewer.VerticalScrollBarVisibility="Visible" Height="433" SelectionMode="Single" >
+            <ListView.ItemTemplate >
+                <DataTemplate>
+                    <Border Name="Borde"  CornerRadius="6" BorderBrush="Gray" BorderThickness="2" DockPanel.Dock="Top">
+                        <StackPanel Name="Citas"  Orientation="Vertical" Margin="5,5,5,2" Width="380" >
+                            <StackPanel Orientation="Horizontal" >
+                                <TextBlock Text="Hora: " FontWeight="Bold" VerticalAlignment="Center"/>
+                                <TextBlock Text="{Binding Path=Hora}" FontSize="18" VerticalAlignment="Center"/>
+                                <TextBlock Text="    Duración: " FontWeight="Bold" VerticalAlignment="Center"/>
+                                <TextBlock Text="{Binding Path=Duracion}" VerticalAlignment="Center"/>
+                                <TextBlock Text=" min." FontWeight="Bold" VerticalAlignment="Center"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" >
+                                <TextBlock Text="   SIP: " FontWeight="Bold"/>
+                                <TextBlock Text="{Binding Path=SIP}"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" >
+                                <TextBlock Text="   Nombre: " FontWeight="Bold"/>
+                                <TextBlock Text="{Binding Path=Nombre}"/>
+                                <TextBlock Text=" "/>
+                                <TextBlock Text="{Binding Path=Apellidos}" Width="150"/>
+                                <TextBlock Text="   Teléfono: " FontWeight="Bold" TextAlignment="Right" HorizontalAlignment="Right"/>
+                                <TextBlock Text="{Binding Path=Telefono}" TextAlignment="Right" HorizontalAlignment="Right" />
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" >
+                                <TextBlock Text="   Terminada: " FontWeight="Bold" Visibility="Collapsed"/>
+                                <CheckBox IsChecked="{Binding Path=Terminada}" Visibility="Collapsed"/>
+                                <TextBlock Text="{Binding Path=Id}" Visibility="Collapsed"/>
+                                <TextBlock Text="{Binding Path=Fecha}" Visibility="Collapsed"/>
+                                <TextBlock Text="{Binding Path=Cola_Id}" Visibility="Collapsed"/>
+                                <TextBlock Text="{Binding Path=Paciente_Id}" Visibility="Collapsed"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Border>
+                    <DataTemplate.Triggers>                       
+                        <DataTrigger Binding="{Binding Terminada}" Value="True">
+                            <Setter TargetName="Borde" Property="Background" Value="CornflowerBlue" />
+                            <Setter TargetName="Citas"  Property="Style" Value="{StaticResource Terminada}"></Setter>
+                        </DataTrigger>
+                    </DataTemplate.Triggers>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button Content="Siguiente" VerticalAlignment="Top" Click="Button_Click_1" Grid.Row="2" Height="42" Margin="19,168,24,0" FontSize="26"/>
+
+    </Grid>
+</Window>

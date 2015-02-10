@@ -1,0 +1,220 @@
+﻿<Window x:Class="MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:sys="clr-namespace:System;assembly=mscorlib"
+    Title="Panel" Height="768" Width="1024" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
+    
+    <Window.Resources>
+     <Style TargetType="StackPanel" x:Key="Actual">
+            <Setter Property="Orientation" Value="Vertical"/>          
+            <Style.Resources>               
+                <Style TargetType="TextBlock">
+                    <Setter Property="Height" Value="90"/>
+                    <Setter Property="VerticalAlignment" Value="Center" />                 
+                    <Setter Property="HorizontalAlignment" Value="Center" />                  
+                    <Setter Property="FontSize" Value="45"/>
+                    <Setter Property="TextAlignment" Value="Center" />
+                    <Setter Property="FontFamily" Value="Arial Black" />
+                    <Setter Property="Foreground" Value="#FF264199"/>                    
+                </Style>
+            </Style.Resources>
+        </Style>
+        <Style TargetType="ListView" x:Key="Anterior">
+            <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Disabled"/>
+            <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Disabled"/>
+            <Setter Property="Height" Value="444"/>
+        </Style>
+        <Style TargetType="StackPanel" x:Key="Anterior1">
+            <Setter Property="Orientation" Value="Vertical"/>
+            <Setter Property="Width" Value="200"/>
+            <Setter Property="Height" Value="60"/>
+            <Style.Resources>
+                <Style TargetType="TextBlock">
+                    <Setter Property="Height" Value="60"/>
+                    <Setter Property="VerticalAlignment" Value="Center" />
+                    <Setter Property="FontSize" Value="24"/>
+                    <Setter Property="TextAlignment" Value="Center" />
+                    <Setter Property="FontFamily" Value="Arial" />
+                    <Setter Property="Foreground" Value="#FF264199"/>
+                    <Setter Property="Padding" Value="0,20,0,0"/>
+                </Style>
+            </Style.Resources>
+        </Style>
+        <Style TargetType="TextBlock"  x:Key="Especialidad">
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="TextAlignment" Value="Center" />
+            <Setter Property="FontFamily" Value="Arial Black" />
+            <Setter Property="Foreground" Value="#FF264199"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Padding" Value="0,5,0,0"/>
+        </Style>
+     
+      <Storyboard x:Key="Parpadeo" Duration="0:0:30" >
+            <DoubleAnimation Storyboard.TargetProperty="(TextBlock.Opacity)" 
+                                From="1" To="0" Duration="0:0:1"
+                                RepeatBehavior="Forever" AutoReverse="True"/>
+        </Storyboard>
+    </Window.Resources>
+      
+    <Grid Width="1024" ShowGridLines="False" Margin="0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="200"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="344"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock  Text="Centro de especialidades DAM" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center" Height="30" HorizontalAlignment="Center" Background="White" FontSize="24"  TextAlignment="Center" FontFamily="Arial" TextOptions.TextFormattingMode="Display" RenderTransformOrigin="0.5,0.5" Foreground="#FF3058DE" />
+
+        <TextBlock Name="Fecha" Text="{Binding}" Grid.Row="0" Grid.Column="3" Grid.ColumnSpan="2" VerticalAlignment="Center" Height="30" HorizontalAlignment="Center" Background="White" FontSize="24"  TextAlignment="Center" FontFamily="Arial Black" FontStretch="ExtraExpanded" TextOptions.TextFormattingMode="Display" RenderTransformOrigin="0.5,0.5" Foreground="#FF3058DE" />
+        
+        <TextBlock Name="Especialidad1" Text="{Binding TargetNullValue='' }" Grid.Row="1" Grid.Column="0" Style="{StaticResource Especialidad}" />
+        <TextBlock Name="Especialidad2" Text="{Binding TargetNullValue=''}" Grid.Row="1" Grid.Column="1" Style="{StaticResource Especialidad}" />
+        <TextBlock Name="Especialidad3" Text="{Binding TargetNullValue=''}" Grid.Row="1" Grid.Column="2"  Style="{StaticResource Especialidad}" />
+        <TextBlock Name="Especialidad4" Text="{Binding TargetNullValue='' }" Grid.Row="1" Grid.Column="3" Style="{StaticResource Especialidad}"  />
+        <TextBlock Name="Especialidad5" Text="{Binding TargetNullValue=''}" Grid.Row="1" Grid.Column="4"  Style="{StaticResource Especialidad}" />
+
+        <StackPanel Name="PanelActual1" Grid.Row="2" Grid.Column="0" Style="{StaticResource Actual}" Background="#FF9DDCEA">
+            <TextBlock Name="ConsultaActual1" Text="{Binding TargetNullValue=''}" FontSize="35"/>
+            <TextBlock Name="HoraActual1" Text="{Binding TargetNullValue=''}">
+                <TextBlock.Triggers>
+                    <EventTrigger RoutedEvent="TextBlock.Loaded">
+                        <EventTrigger.Actions>
+                            <BeginStoryboard Storyboard="{StaticResource Parpadeo}"/>
+                          
+                        </EventTrigger.Actions>
+                    </EventTrigger>
+                </TextBlock.Triggers>
+            </TextBlock>
+        </StackPanel>
+        <StackPanel Name="PanelActual2" Grid.Row="2" Grid.Column="1" Style="{StaticResource Actual}"  >
+            <TextBlock Name="ConsultaActual2" Text="{Binding TargetNullValue=''}" FontSize="35"  />
+            <TextBlock Name="HoraActual2" Text="{Binding TargetNullValue=''}" >
+                <TextBlock.Triggers>
+                    
+                    <EventTrigger RoutedEvent="TextBlock.Loaded">
+                        <EventTrigger.Actions>
+                            <BeginStoryboard Storyboard="{StaticResource Parpadeo}"/>
+
+                        </EventTrigger.Actions>
+                    </EventTrigger>
+                </TextBlock.Triggers>
+            </TextBlock>
+        </StackPanel>
+        <StackPanel Name="PanelActual3" Grid.Row="2" Grid.Column="2" Style="{StaticResource Actual}" Background="#FF9DDCEA">
+            <TextBlock Name="ConsultaActual3" Text="{Binding TargetNullValue=''}" FontSize="35"/>
+            <TextBlock Name="HoraActual3" Text="{Binding TargetNullValue=''}">
+                <TextBlock.Triggers>
+                    <EventTrigger RoutedEvent="TextBlock.Loaded">
+                        <EventTrigger.Actions>
+                            <BeginStoryboard Storyboard="{StaticResource Parpadeo}"/>
+
+                        </EventTrigger.Actions>
+                    </EventTrigger>
+                </TextBlock.Triggers>
+            </TextBlock>
+        </StackPanel>
+        <StackPanel Name="PanelActual4" Grid.Row="2" Grid.Column="3" Style="{StaticResource Actual}">
+            <TextBlock Name="ConsultaActual4" Text="{Binding TargetNullValue=''}" FontSize="35" />
+            <TextBlock Name="HoraActual4" Text="{Binding TargetNullValue=''}" >
+                <TextBlock.Triggers>
+                    <EventTrigger RoutedEvent="TextBlock.Loaded">
+                        <EventTrigger.Actions>
+                            <BeginStoryboard Storyboard="{StaticResource Parpadeo}"/>
+
+                        </EventTrigger.Actions>
+                    </EventTrigger>
+                </TextBlock.Triggers>
+            </TextBlock>
+        </StackPanel>
+        <StackPanel Name="PanelActual5" Grid.Row="2" Grid.Column="4" Style="{StaticResource Actual}" Background="#FF9DDCEA">
+            <TextBlock Name="ConsultaActual5" Text="{Binding TargetNullValue=''}" FontSize="35"/>
+            <TextBlock Name="HoraActual5" Text="{Binding TargetNullValue=''}" >
+                <TextBlock.Triggers>
+                    <EventTrigger RoutedEvent="TextBlock.Loaded">
+                        <EventTrigger.Actions>
+                            <BeginStoryboard Storyboard="{StaticResource Parpadeo}"/>
+                        </EventTrigger.Actions>
+                    </EventTrigger>
+                </TextBlock.Triggers>
+            </TextBlock>
+        </StackPanel>
+
+        <TextBox  Text="Llamados Recientemente" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="5" VerticalAlignment="Center" Height="30" HorizontalAlignment="Center" Background="White" FontSize="24" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Width="1024" TextAlignment="Center" FontFamily="Arial Black" FontStretch="ExtraExpanded" IsUndoEnabled="True" TextOptions.TextFormattingMode="Display" RenderTransformOrigin="0.5,0.5" Foreground="#FF264199" />
+
+        <ListView Grid.Row="4" Grid.Column="0" Name="Anteriores1" ItemsSource="{Binding Path=Terminadas1}" Style="{StaticResource Anterior}" Background="#FFE0E0E0" Height="Auto" >
+            <ListView.ItemTemplate >
+                <DataTemplate>
+                    <Border Name="Borde" BorderBrush="#FFC1C1C1" BorderThickness="2" DockPanel.Dock="Top">
+                        <StackPanel Name="PanelAnterior1" Style="{StaticResource Anterior1}" Background="#FFC8E4EA" >
+                            <!-- <TextBlock Name="ConsultaAnterior" Text="{Binding Path=NombreConsulta}" Height="40"/>--> 
+                            <TextBlock Text="{Binding Path=Hora}"/>
+                        </StackPanel>
+                    </Border>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <ListView Grid.Row="4" Grid.Column="1" Name="Anteriores2" ItemsSource="{Binding Path=Terminadas2}" Background="#FFC1C1C1" Style="{StaticResource Anterior}" Height="Auto">
+            <ListView.ItemTemplate >
+                <DataTemplate>
+                    <Border Name="Borde" BorderBrush="#FFE0E0E0" BorderThickness="2" DockPanel.Dock="Top">
+                        <StackPanel Name="PanelAnterior1" Style="{StaticResource Anterior1}" Background="#FFC8E4EA">
+                            <!-- <TextBlock Name="ConsultaAnterior" Text="{Binding Path=NombreConsulta}" Height="40"/>--> 
+                            <TextBlock Text="{Binding Path=Hora}" />
+                        </StackPanel>
+                    </Border>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <ListView Grid.Row="4" Grid.Column="2" Name="Anteriores3" ItemsSource="{Binding Path=Terminadas3}" Background="#FFE0E0E0" Style="{StaticResource Anterior}" Grid.ColumnSpan="2" Height="Auto" Margin="0,0,204.6,0">
+            <ListView.ItemTemplate >
+                <DataTemplate>
+                    <Border Name="Borde" BorderBrush="#FFC1C1C1" BorderThickness="2" DockPanel.Dock="Top">
+                        <StackPanel Name="PanelAnterior1" Style="{StaticResource Anterior1}" Background="#FFC8E4EA" >
+                            <!-- <TextBlock Name="ConsultaAnterior" Text="{Binding Path=NombreConsulta}" Height="40"/>-->
+                            <TextBlock Text="{Binding Path=Hora}"/>
+                        </StackPanel>
+                    </Border>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <ListView Grid.Row="4" Grid.Column="3" Name="Anteriores4" ItemsSource="{Binding Path=Terminadas4}" Background="#FFC1C1C1" Style="{StaticResource Anterior}" Grid.ColumnSpan="2" Height="Auto" Margin="0.2,0,204.4,0">
+            <ListView.ItemTemplate >
+                <DataTemplate>
+                    <Border Name="Borde" BorderBrush="#FFE0E0E0" BorderThickness="2" DockPanel.Dock="Top">
+                        <StackPanel Name="PanelAnterior1" Style="{StaticResource Anterior1}"  Background="#FFC8E4EA">
+                            <!-- <TextBlock Name="ConsultaAnterior" Text="{Binding Path=NombreConsulta}" Height="40"/>-->
+                            <TextBlock Text="{Binding Path=Hora}"/>
+                        </StackPanel>
+                    </Border>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <ListView Grid.Row="4" Grid.Column="4" Name="Anteriores5" ItemsSource="{Binding Path=Terminadas5}" Background="#FFE0E0E0"  Style="{StaticResource Anterior}" Height="Auto" Margin="0.4,0,-0.6,0">
+            <ListView.ItemTemplate >
+                <DataTemplate>
+                    <Border Name="Borde" BorderBrush="#FFC1C1C1" BorderThickness="2" DockPanel.Dock="Top">
+                        <StackPanel Name="PanelAnterior1" Style="{StaticResource Anterior1}" Background="#FFC8E4EA">
+                           <!-- <TextBlock Name="ConsultaAnterior" Text="{Binding Path=NombreConsulta}" Height="40"/>-->
+                            <TextBlock Text="{Binding Path=Hora}"/>
+                        </StackPanel>
+                    </Border>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <TextBox  Text="Le rogamos que tenga paciencia, dentro podría estar usted." Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="5" VerticalAlignment="Center" Height="50" HorizontalAlignment="Center" Background="White" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Width="1024" TextAlignment="Center" FontFamily="Arial Black" FontStretch="ExtraExpanded" IsUndoEnabled="True" TextOptions.TextFormattingMode="Display" RenderTransformOrigin="0.5,0.5" Foreground="#FF264199" />
+
+    </Grid>
+</Window>
+

@@ -1,0 +1,24 @@
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre 1\ejercicios\Gestion de Turnos\Negocio\obj\Debug\Negocio.Resources.resources
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre 1\ejercicios\Gestion de Turnos\Negocio\obj\Debug\ANegocio.vbproj.GenerateResource.Cache
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre 1\ejercicios\Gestion de Turnos\Negocio\obj\Debug\Negocio.dll
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre 1\ejercicios\Gestion de Turnos\Negocio\obj\Debug\Negocio.xml
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre 1\ejercicios\Gestion de Turnos\Negocio\obj\Debug\Negocio.pdb
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre 1\ejercicios\Gestion de Turnos\Negocio\bin\Debug\Negocio.dll
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre 1\ejercicios\Gestion de Turnos\Negocio\bin\Debug\Negocio.pdb
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre 1\ejercicios\Gestion de Turnos\Negocio\bin\Debug\Negocio.xml
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre 1\ejercicios\Gestion de Turnos\Negocio\bin\Debug\ADatos.dll
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre 1\ejercicios\Gestion de Turnos\Negocio\bin\Debug\ADatos.pdb
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre 1\ejercicios\Gestion de Turnos\Negocio\bin\Debug\ADatos.xml
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre 1\ejercicios\Gestion de Turnos\Negocio\obj\Debug\ANegocio.vbprojResolveAssemblyReference.cache
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Negocio\obj\Debug\Negocio.Resources.resources
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Negocio\obj\Debug\ANegocio.vbproj.GenerateResource.Cache
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Negocio\bin\Debug\Negocio.dll
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Negocio\bin\Debug\Negocio.pdb
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Negocio\bin\Debug\Negocio.xml
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Negocio\bin\Debug\ADatos.dll
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Negocio\bin\Debug\ADatos.pdb
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Negocio\bin\Debug\ADatos.xml
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Negocio\obj\Debug\ANegocio.vbprojResolveAssemblyReference.cache
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Negocio\obj\Debug\Negocio.dll
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Negocio\obj\Debug\Negocio.xml
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Negocio\obj\Debug\Negocio.pdb

@@ -1,0 +1,1 @@
+c:\users\angel\documents\visual studio 2013\Projects\Gestion de Turnos\Gestion de Turnos\bin\Debug\Gestion de Turnos.exe.config

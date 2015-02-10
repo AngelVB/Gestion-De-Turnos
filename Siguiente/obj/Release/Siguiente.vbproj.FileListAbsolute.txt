@@ -1,0 +1,35 @@
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Siguiente\bin\Release\Siguiente.exe.config
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Siguiente\bin\Release\Siguiente.exe
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Siguiente\bin\Release\Siguiente.pdb
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Siguiente\bin\Release\Siguiente.xml
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Siguiente\bin\Release\Negocio.dll
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Siguiente\bin\Release\System.Data.SQLite.dll
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Siguiente\bin\Release\ADatos.dll
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Siguiente\bin\Release\Negocio.pdb
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Siguiente\bin\Release\Negocio.xml
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Siguiente\bin\Release\System.Data.SQLite.pdb
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Siguiente\bin\Release\ADatos.pdb
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Siguiente\bin\Release\ADatos.xml
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Siguiente\obj\Release\MainWindow.baml
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Siguiente\obj\Release\FormSiguiente.baml
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Siguiente\obj\Release\RenombrarConsulta.baml
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Siguiente\obj\Release\MainWindow.g.vb
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Siguiente\obj\Release\FormSiguiente.g.vb
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Siguiente\obj\Release\RenombrarConsulta.g.vb
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Siguiente\obj\Release\Application.g.vb
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Siguiente\obj\Release\Siguiente_MarkupCompile.cache
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Siguiente\obj\Release\Siguiente.g.resources
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Siguiente\obj\Release\Siguiente.Resources.resources
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Siguiente\obj\Release\Siguiente.vbproj.GenerateResource.Cache
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Mostrador\bin\Release\Siguiente.exe.config
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Mostrador\bin\Release\Siguiente.exe
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Mostrador\bin\Release\Siguiente.pdb
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Mostrador\bin\Release\Siguiente.xml
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Siguiente\obj\Release\Siguiente.vbprojResolveAssemblyReference.cache
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Siguiente\obj\Release\Siguiente.exe
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Siguiente\obj\Release\Siguiente.xml
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Siguiente\obj\Release\Siguiente.pdb
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega 4\Gestion de Turnos\Mostrador\bin\Release\Siguiente.exe.config
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega 4\Gestion de Turnos\Siguiente\obj\Release\Siguiente.exe
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega 4\Gestion de Turnos\Siguiente\obj\Release\Siguiente.xml
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega 4\Gestion de Turnos\Siguiente\obj\Release\Siguiente.pdb

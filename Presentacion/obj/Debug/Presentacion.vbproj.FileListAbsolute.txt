@@ -1,0 +1,27 @@
+C:\Users\Angel\Documents\Visual Studio 2013\Projects\Gestion de Turnos\Presentacion\bin\Debug\Presentacion.exe.config
+C:\Users\Angel\Documents\Visual Studio 2013\Projects\Gestion de Turnos\Presentacion\bin\Debug\Presentacion.exe
+C:\Users\Angel\Documents\Visual Studio 2013\Projects\Gestion de Turnos\Presentacion\bin\Debug\Presentacion.pdb
+C:\Users\Angel\Documents\Visual Studio 2013\Projects\Gestion de Turnos\Presentacion\bin\Debug\Presentacion.xml
+C:\Users\Angel\Documents\Visual Studio 2013\Projects\Gestion de Turnos\Presentacion\obj\Debug\Presentacion.vbprojResolveAssemblyReference.cache
+C:\Users\Angel\Documents\Visual Studio 2013\Projects\Gestion de Turnos\Presentacion\obj\Debug\Presentacion.Resources.resources
+C:\Users\Angel\Documents\Visual Studio 2013\Projects\Gestion de Turnos\Presentacion\obj\Debug\Presentacion.vbproj.GenerateResource.Cache
+C:\Users\Angel\Documents\Visual Studio 2013\Projects\Gestion de Turnos\Presentacion\obj\Debug\Presentacion.exe
+C:\Users\Angel\Documents\Visual Studio 2013\Projects\Gestion de Turnos\Presentacion\obj\Debug\Presentacion.xml
+C:\Users\Angel\Documents\Visual Studio 2013\Projects\Gestion de Turnos\Presentacion\obj\Debug\Presentacion.pdb
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre 1\ejercicios\Gestion de Turnos\Presentacion\bin\Debug\turnos.s3db
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre 1\ejercicios\Gestion de Turnos\Presentacion\bin\Debug\Presentacion.exe.config
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre 1\ejercicios\Gestion de Turnos\Presentacion\bin\Debug\Presentacion.exe
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre 1\ejercicios\Gestion de Turnos\Presentacion\bin\Debug\Presentacion.pdb
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre 1\ejercicios\Gestion de Turnos\Presentacion\bin\Debug\Presentacion.xml
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre 1\ejercicios\Gestion de Turnos\Presentacion\bin\Debug\ADatos.dll
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre 1\ejercicios\Gestion de Turnos\Presentacion\bin\Debug\System.Data.SQLite.dll
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre 1\ejercicios\Gestion de Turnos\Presentacion\bin\Debug\ADatos.pdb
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre 1\ejercicios\Gestion de Turnos\Presentacion\bin\Debug\ADatos.xml
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre 1\ejercicios\Gestion de Turnos\Presentacion\bin\Debug\System.Data.SQLite.pdb
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre 1\ejercicios\Gestion de Turnos\Presentacion\obj\Debug\Presentacion.vbprojResolveAssemblyReference.cache
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre 1\ejercicios\Gestion de Turnos\Presentacion\obj\Debug\Presentacion.Form1.resources
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre 1\ejercicios\Gestion de Turnos\Presentacion\obj\Debug\Presentacion.Resources.resources
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre 1\ejercicios\Gestion de Turnos\Presentacion\obj\Debug\Presentacion.vbproj.GenerateResource.Cache
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre 1\ejercicios\Gestion de Turnos\Presentacion\obj\Debug\Presentacion.exe
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre 1\ejercicios\Gestion de Turnos\Presentacion\obj\Debug\Presentacion.xml
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre 1\ejercicios\Gestion de Turnos\Presentacion\obj\Debug\Presentacion.pdb

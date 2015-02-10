@@ -1,0 +1,14 @@
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Negocio\obj\Release\Negocio.Resources.resources
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Negocio\obj\Release\ANegocio.vbproj.GenerateResource.Cache
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Negocio\bin\Release\Negocio.dll
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Negocio\bin\Release\Negocio.pdb
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Negocio\bin\Release\Negocio.xml
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Negocio\bin\Release\ADatos.dll
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Negocio\bin\Release\System.Data.SQLite.dll
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Negocio\bin\Release\ADatos.pdb
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Negocio\bin\Release\ADatos.xml
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Negocio\bin\Release\System.Data.SQLite.pdb
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Negocio\obj\Release\ANegocio.vbprojResolveAssemblyReference.cache
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Negocio\obj\Release\Negocio.dll
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Negocio\obj\Release\Negocio.xml
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Negocio\obj\Release\Negocio.pdb

@@ -1,0 +1,36 @@
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Mostrador\bin\Release\turnos.s3db
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Mostrador\obj\Release\Mostrador.Altas.resources
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Mostrador\obj\Release\Mostrador.AnyadirCita.resources
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Mostrador\obj\Release\Mostrador.AnyadirCola.resources
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Mostrador\obj\Release\Mostrador.AnyadirDias.resources
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Mostrador\obj\Release\Mostrador.Buscar.resources
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Mostrador\obj\Release\Mostrador.ConsultarCitas.resources
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Mostrador\obj\Release\Mostrador.ConsultarColas.resources
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Mostrador\obj\Release\Mostrador.ListadoCitasMedico.resources
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Mostrador\obj\Release\Mostrador.ResultBusqueda.resources
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Mostrador\obj\Release\Mostrador.Mostrador.resources
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Mostrador\obj\Release\Mostrador.ConsultarDias.resources
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Mostrador\obj\Release\Mostrador.Resources.resources
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Mostrador\obj\Release\Mostrador.vbproj.GenerateResource.Cache
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Mostrador\obj\Release\RdlCompile.cache
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Mostrador\obj\Release\RdlCompile.compiled
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Mostrador\bin\Release\Mostrador.exe.config
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Mostrador\bin\Release\Mostrador.exe
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Mostrador\bin\Release\Mostrador.pdb
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Mostrador\bin\Release\Mostrador.xml
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Mostrador\bin\Release\Negocio.dll
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Mostrador\bin\Release\System.Data.SQLite.dll
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Mostrador\bin\Release\ADatos.dll
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Mostrador\bin\Release\Negocio.pdb
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Mostrador\bin\Release\Negocio.xml
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Mostrador\bin\Release\System.Data.SQLite.pdb
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Mostrador\bin\Release\ADatos.pdb
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Mostrador\bin\Release\ADatos.xml
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Mostrador\obj\Release\Mostrador.vbprojResolveAssemblyReference.cache
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Mostrador\obj\Release\Mostrador.exe
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Mostrador\obj\Release\Mostrador.xml
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Mostrador\obj\Release\Mostrador.pdb
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega 4\Gestion de Turnos\Mostrador\bin\Release\Mostrador.exe.config
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega 4\Gestion de Turnos\Mostrador\obj\Release\Mostrador.exe
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega 4\Gestion de Turnos\Mostrador\obj\Release\Mostrador.xml
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega 4\Gestion de Turnos\Mostrador\obj\Release\Mostrador.pdb

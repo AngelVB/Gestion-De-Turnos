@@ -1,0 +1,1197 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+ADatos
+</name>
+</assembly>
+<members>
+<member name="P:ADatos.My.Resources.Resources.ResourceManager">
+	<summary>
+  Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
+</summary>
+</member><member name="P:ADatos.My.Resources.Resources.Culture">
+	<summary>
+  Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
+  búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
+</summary>
+</member><member name="T:ADatos.My.Resources.Resources">
+	<summary>
+  Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
+</summary>
+</member><member name="F:ADatos.Medico._ADO">
+	<summary>
+Propiedad _ADO (PersonaADO). Objeto para acceder a BD.
+ </summary>
+</member><member name="M:ADatos.Medico.#ctor">
+	<summary>
+Constructor Médico.
+ </summary>
+</member><member name="M:ADatos.Medico.#ctor(System.Int32@,System.String@,System.String@,System.String@,System.String@,System.String@,System.String@,System.String@,System.Int32@)">
+	<summary>
+Constructor Médico.
+ </summary>
+	<param name="PId">(Integer)Id Persona PK.</param>
+	<param name="PNumColegiado">(String)Nº Colegiado médico.</param>
+	<param name="PPassword">(String)Contraseña médico.</param>
+	<param name="PNombre">(String)Nombre Persona.</param>
+	<param name="PApellidos">(String)Apellidos Persona.</param>
+	<param name="PNif ">(String)NIF Persona.</param>
+	<param name="PEmail ">(String)Email Persona.</param>
+	<param name="PTelefono ">(String)Teléfono Persona.</param>
+	<param name="PBaja ">(Boolean)Situación Baja de Persona.</param>
+</member><member name="M:ADatos.Medico.Modificar(System.Int32@,System.String@,System.String@,System.String@,System.String@,System.String@,System.String@,System.String@,System.Int32@)">
+	<summary>
+ Modificar. Permite modificar los datos de un médico determinado por su Id.
+ </summary>
+	<param name="PId">(Integer)Id Persona PK.</param>
+	<param name="PNumColegiado">(String)Nº Colegiado médico.</param>
+	<param name="PPassword">(String)Contraseña médico.</param>
+	<param name="PNombre">(String)Nombre Persona.</param>
+	<param name="PApellidos">(String)Apellidos Persona.</param>
+	<param name="PNif ">(String)NIF Persona.</param>
+	<param name="PEmail ">(String)Email Persona.</param>
+	<param name="PTelefono ">(String)Teléfono Persona.</param>
+	<param name="PBaja ">(Boolean)Situación Baja de Persona.</param>
+</member><member name="M:ADatos.Medico.Borrar(System.Int32@)">
+	<summary>
+ Borrar. Permite borrar un médico determinado por su Id.
+ </summary>
+	<param name="PId">(Integer)Id Persona.</param>
+</member><member name="M:ADatos.Medico.Consultar">
+	<summary>
+ Consultar. Permite consultar los datos de todos los médicos.
+ </summary>
+	<returns>(List(Of Medico)) Medicos. Lista de medicos con todos los datos de todos los médicos de nuestra base de datos.</returns>
+</member><member name="M:ADatos.Medico.Buscar(System.String@)">
+	<summary>
+ Buscar. Permite consultar todos los datos de todos los médicos de nuestra base de datos determinados por él formulario de búsqueda.
+ </summary>
+	<param name="PBusqueda ">(String)Cadena de búsqueda de nuestro formulario de búsqueda.</param>
+	<returns>(List(Of Medico)) Medicos. Lista de Médicos con todos los datos de todos los médicos de nuestra base de datos.</returns>
+</member><member name="M:ADatos.Medico.ConsultarCompleto">
+	<summary>
+ Consultar. Permite consultar los datos de un médico determinados por su Nº de Colegiado.
+ </summary>
+	<returns>(DataTable) Result. DataTable con los datos del médico devuelto por la consulta.</returns>
+</member><member name="M:ADatos.Medico.Consultar(System.Int32@)">
+	<summary>
+ Consultar. Permite consultar los datos de un médico determinado por su Id.
+ </summary>
+	<param name="PId">(Integer)Id médico.</param>
+	<returns>(DataTable) Result. DataTable con los datos del médico devuelto por la consulta.</returns>
+</member><member name="M:ADatos.Medico.Existe(System.String@)">
+	<summary>
+ Existe. Permite consultar si existe el médico a insertar.
+ Utilizaremos este método para antes de insertar pacientes o médicos, para comprobar si ya existe en la base de datos.
+ </summary>
+	<returns>(Boolean) Existe. Id de la última persona insertada.</returns>
+</member><member name="M:ADatos.Medico.Validar(System.String@,System.String@)">
+	<summary>
+ Validar. Valida los datos de un médico para que pueda acceder al sistema
+ </summary>
+	<param name="PNumColegiado ">(String)Nº Colegiado médico.</param>
+	<param name="PPassword">(String)Password médico.</param>
+	<returns>(Boolean) Valido.</returns>
+</member><member name="P:ADatos.Medico.Id">
+	<summary>
+Propiedad Id (Integer) Clave primaria en tabla médicos, coincide con Id tabla Persona.
+</summary>
+</member><member name="P:ADatos.Medico.NumColegiado">
+	<summary>
+Propiedad NumColegiado (String) Nº Colegiado Médico.
+</summary>
+</member><member name="P:ADatos.Medico.Password">
+	<summary>
+Propiedad Password (String) Contraseña Médico.
+</summary>
+</member><member name="M:ADatos.Medico.Dispose">
+	<summary>
+ Dispose. Encargada de decirle al recolector de basura que resetee los atributos de nuestra clase.
+ </summary>
+</member><member name="T:ADatos.Medico">
+	<summary>
+ Medico.vb
+ Contiene la clase Medico. Hereda de Persona 
+ Encargada de crear, modificar, consultar y eliminar médicos de nuestra aplicación.
+ </summary>
+	<author> Ángel Valera</author>
+</member><member name="M:ADatos.DireccionADO.#ctor">
+	<summary>
+Constructor DireccionADO. Establece la conexión con la base de datos llamando al constructor de BDSQLite.
+ </summary>
+</member><member name="M:ADatos.DireccionADO.Insertar(System.String,System.String,System.String,System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)">
+	<summary>
+Función Insertar. Encargada de insertar una nueva cola en nuestra base de datos.
+ </summary>
+	<param name="PTipoVia">(String)Tipo Vía.</param>
+	<param name="PVia">(String)Nombre Vía.</param>
+	<param name="PNumero">(String)Número Vía.</param>
+	<param name="PKilometro">(Integer)Kilómetro Vía.</param>
+	<param name="PHectometro">(Integer)Hectómetro Vía.</param>
+	<param name="PBloque">(String)Bloque Vía.</param>
+	<param name="PPortal">(String)Portal Vía.</param>
+	<param name="PEscalera">(String)Escalera.</param>
+	<param name="Pplanta">(String)Planta.</param>
+	<param name="PPuerta">(String)Puerta.</param>
+	<param name="PLocalidad">(String)Localidad.</param>
+	<param name="PMunicipio">(String)Municipio.</param>
+	<param name="PProvincia">(String)Provincia.</param>
+	<param name="PCodPostal">(String)Código Postal.</param>
+	<param name="PPersonaId ">(Integer)Id Persona.</param>
+	<returns>(Integer) Inserciones. Número de direcciones insertadas en nuestra base de datos</returns>
+</member><member name="M:ADatos.DireccionADO.Borrar(System.Int32)">
+	<summary>
+ Borrar. Permite borrar una dirección de nuestra base de datos determinada por su Id.
+ </summary>
+	<param name="PId">(Integer)Id Dirección.</param>
+	<returns>(Integer) Deletes. Número de direcciones borradas en nuestra base de datos</returns>
+</member><member name="M:ADatos.DireccionADO.Consultar">
+	<summary>
+ Consultar. Permite consultar los datos de todas las direcciones.
+ </summary>
+	<returns>(List(Of Direccion)) Direccion. Lista de direcciones con todos los datos de todas las direcciones de nuestra base de datos.</returns>
+</member><member name="M:ADatos.DireccionADO.ConsultarPorPersona(System.Int32@)">
+	<summary>
+ Consultar. Permite consultar los datos de una dirección determinada en nuestra base de datos por el Id de Persona.
+ </summary>
+	<param name="PPersonaId ">(Integer)Id de persona a consultar.</param>
+	<returns>(Direccion) Dir. Objeto Dirección con los datos de la dirección devuelta por la consulta.</returns>
+</member><member name="M:ADatos.DireccionADO.Consultar(System.Int32@)">
+	<summary>
+ Consultar. Permite consultar los datos de una dirección determinada en nuestra base de datos por su Id.
+ </summary>
+	<param name="PId  ">(Integer)Id de dirección a consultar.</param>
+	<returns>(Direccion) Dir. Objeto Dirección con los datos de la dirección devuelta por la consulta.</returns>
+</member><member name="M:ADatos.DireccionADO.dispose">
+	<summary>
+ Dispose. Encargada de decirle al recolector de basura que cierre la base de datos.
+ </summary>
+</member><member name="T:ADatos.DireccionADO">
+	<summary>
+ DireccionADO.vb
+ Contiene la clase DireccionADO.
+ Encargada de gestionar todos los métodos y funciones utilizados en la comunicación entre
+ las direcciones de las personas de nuestra aplicación y la base de datos.
+ </summary>
+	<author> Ángel Valera</author>
+</member><member name="F:ADatos.Persona._ADO">
+	<summary>
+Propiedad _ADO (PersonaADO). Objeto para acceder a BD.
+ </summary>
+</member><member name="M:ADatos.Persona.#ctor">
+	<summary>
+Constructor Persona.
+ </summary>
+</member><member name="M:ADatos.Persona.#ctor(System.Int32@,System.String@,System.String@,System.String@,System.String@,System.String@,System.Int32@)">
+	<summary>
+Constructor Persona.
+ </summary>
+	<param name="PNombre">(String)Nombre Persona.</param>
+	<param name="PApellidos">(String)Apellidos Persona.</param>
+	<param name="PNif ">(String)NIF Persona.</param>
+	<param name="PEmail ">(String)Email Persona.</param>
+	<param name="PTelefono ">(String)Teléfono Persona.</param>
+	<param name="PBaja ">(Boolean)Situación Baja de Persona.</param>
+</member><member name="M:ADatos.Persona.Modificar(System.Int32@,System.String@,System.String@,System.String@,System.String@,System.String@,System.Int32@)">
+	<summary>
+ Modificar. Permite modificar los datos de una persona determinada por su Id.
+ </summary>
+	<param name="PId">(Integer)Id Persona.</param>
+	<param name="PNombre">(String)Nombre Persona.</param>
+	<param name="PApellidos">(String)Apellidos Persona.</param>
+	<param name="PNif ">(String)NIF Persona.</param>
+	<param name="PEmail ">(String)Email Persona.</param>
+	<param name="PTelefono ">(String)Teléfono Persona.</param>
+	<param name="PBaja ">(Boolean)Situación Baja de Persona.</param>
+</member><member name="M:ADatos.Persona.Borrar(System.Int32@)">
+	<summary>
+ Borrar. Permite borrar una persona determinada por su Id.
+ </summary>
+	<param name="PId">(Integer)Id Persona.</param>
+</member><member name="M:ADatos.Persona.ConsultarId">
+	<summary>
+ ConsultarId. Permite consultar la id de la última persona insertada.
+ Utilizaremos este método para poder insertar pacientes, médicos o direcciones con la Id de persona correcta.
+ </summary>
+	<returns>(Integer) UltimaId. Id de la última persona insertada.</returns>
+</member><member name="M:ADatos.Persona.Consultar">
+	<summary>
+ Consultar. Permite consultar los datos de todos las direcciones.
+ </summary>
+	<returns>(List(Of Direccion)) Direccion. Lista de direcciones con todos los datos de todas las direcciones de nuestra base de datos.</returns>
+</member><member name="M:ADatos.Persona.Existe(System.String@)">
+	<summary>
+ Existe. Permite consultar si existe la persona a insertar.
+ Utilizaremos este método para antes de insertar pacientes o médicos, para comprobar si ya existe en la base de datos.
+ </summary>
+	<returns>(Boolean) Existe. Id de la última persona insertada.</returns>
+</member><member name="M:ADatos.Persona.UpdateBaja(System.Int32@,System.String@,System.String@,System.String@,System.String@,System.String@,System.Int32@)">
+	<summary>
+ Baja. Permite modificar el valor del atributo Baja por el Id de persona.
+ </summary>
+	<param name="PId">(Integer)Id Persona.</param>
+	<param name="PBaja ">(Boolean)Situación Baja de Persona.</param>
+</member><member name="P:ADatos.Persona.Id">
+	<summary>
+Propiedad Id (Integer) Clave primaria en tabla personas.
+</summary>
+</member><member name="P:ADatos.Persona.Nombre">
+	<summary>
+Propiedad Nombre (String) 20 caracteres.
+ </summary>
+</member><member name="P:ADatos.Persona.Apellidos">
+	<summary>
+Propiedad Apellidos (String) 50 caracteres.
+ </summary>
+</member><member name="P:ADatos.Persona.Nif">
+	<summary>
+Propiedad Nif (String) 9 caracteres.
+ </summary>
+</member><member name="P:ADatos.Persona.Email">
+	<summary>
+Propiedad Email (String) 50 caracteres.
+ </summary>
+</member><member name="P:ADatos.Persona.Telefono">
+	<summary>
+Propiedad Telefono (String) 12 caracteres.
+ </summary>
+</member><member name="P:ADatos.Persona.Baja">
+	<summary>
+Propiedad Baja (Boolean).
+ </summary>
+</member><member name="M:ADatos.Persona.Dispose">
+	<summary>
+ Dispose. Encargada de decirle al recolector de basura que resetee los atributos de nuestra clase.
+ </summary>
+</member><member name="T:ADatos.Persona">
+	<summary>
+ Persona.vb
+ Contiene la clase Persona. 
+ Encargada de crear, modificar, consultar y eliminar personas de nuestra aplicación.
+ </summary>
+	<author> Ángel Valera</author>
+</member><member name="M:ADatos.FestivoADO.#ctor">
+	<summary>
+Constructor FestivoADO. Establece la conexión con la base de datos llamando al constructor de BDSQLite.
+ </summary>
+</member><member name="M:ADatos.FestivoADO.Insertar(System.DateTime,System.String)">
+	<summary>
+Función Insertar. Encargada de insertar un nuevo festivo en nuestra base de datos.
+ </summary>
+	<param name="PFechaFestivo">(Date)Fecha Festivo.</param>
+	<param name="PNombreFestivo ">(Date)Nombre Festivo.</param>
+	<returns>(Integer) Inserciones. Número de festivos insertados en nuestra base de datos</returns>
+</member><member name="M:ADatos.FestivoADO.Modificar(System.Int32,System.DateTime,System.String)">
+	<summary>
+ Modificar. Permite modificar los datos de un festivo de nuestra base de datos determinado por su Id.
+ </summary>
+	<param name="PId">(Integer)Id Festivo PK.</param>
+	<param name="PFechaFestivo">(Date)Fecha Festivo.</param>
+	<param name="PNombreFestivo ">(Date)Nombre Festivo.</param>
+	<returns>(Integer) Updates. Número de festivos modificados en nuestra base de datos</returns>
+</member><member name="M:ADatos.FestivoADO.Borrar(System.Int32)">
+	<summary>
+ Borrar. Permite borrar un festivo determinado por su Id.
+ </summary>
+	<param name="PId">(Integer)Id Festivo.</param>
+	<returns>(Integer) Deletes. Número de festivos borrados en nuestra base de datos</returns>
+</member><member name="M:ADatos.FestivoADO.Consultar">
+	<summary>
+ Consultar. Permite consultar los datos de todos los festivos.
+ </summary>
+	<returns>(DataTable) Tabla. DataTable con todos los datos de todas los festivos de nuestra base de datos.</returns>
+</member><member name="M:ADatos.FestivoADO.Consultar(System.Int32)">
+	<summary>
+ Consultar. Permite consultar los datos de un festivo de nuestra base de datos determinados por su Id
+ </summary>
+	<param name="PId ">(Integer)Id de festivo.</param>
+	<returns>(DataTable) Tabla. DataTable con los datos del festivo devuelto por la consulta.</returns>
+</member><member name="M:ADatos.FestivoADO.Consultar(System.DateTime)">
+	<summary>
+ Consultar. Permite consultar los datos de un festivo de nuestra base de datos determinados por una Fecha
+ </summary>
+	<param name="PFecha  ">(Date)Fecha de festivo.</param>
+	<returns>(DataTable) Tabla. DataTable con los datos del festivo devuelto por la consulta.</returns>
+</member><member name="M:ADatos.FestivoADO.Consultar(System.String)">
+	<summary>
+ Consultar. Permite consultar los datos de todos los festivos de nuestra base de datos en un año determinado.
+ </summary>
+	<param name="Anyo">(Integer)Año a consultar.</param>
+	<returns>(DataTable) Tabla. DataTable con todos los datos de todas los festivos de nuestra base de datos en el año especificado.</returns>
+</member><member name="M:ADatos.FestivoADO.dispose">
+	<summary>
+ Dispose. Encargada de decirle al recolector de basura que cierre la base de datos.
+ </summary>
+</member><member name="T:ADatos.FestivoADO">
+	<summary>
+ FestivoADO.vb
+ Contiene la clase FestivoADO.
+ Encargada de gestionar todos los métodos y funciones utilizados en la comunicación entre
+ los días festivos de nuestra aplicación y la base de datos.
+ </summary>
+	<author> Ángel Valera</author>
+</member><member name="M:ADatos.BDSQLite.#ctor">
+	<summary>
+Constructor BDSQLite. Establece la conexión con la base de datos.
+ </summary>
+</member><member name="M:ADatos.BDSQLite.Abrir">
+	<summary>
+Abrir. Abre la base de datos de nuestra aplicación
+ </summary>
+</member><member name="M:ADatos.BDSQLite.Cerrar">
+	<summary>
+Cerrar. Cierra la base de datos de nuestra aplicación
+ </summary>
+</member><member name="M:ADatos.BDSQLite.EjecutarDML(System.String@)">
+	<summary>
+EjecutarDML. Ejecuta los comandos DML (Select) en nuestra aplicación.
+ </summary>
+	<param name="SQL">(String) Comando SQL a enviar a la base de datos.</param>
+	<returns>(SQLiteDataReader) _Lector. Data Reader con los datos devueltos por la consulta.</returns>
+</member><member name="M:ADatos.BDSQLite.EjecutarDDL(System.String@)">
+	<summary>
+EjecutarDDL. Ejecuta los comandos Insert, Update, Delete en nuestra aplicación.
+ </summary>
+	<param name="SQL">(String) Comando SQL a enviar a la base de datos.</param>
+	<returns>(Integer) FilasAfectadas. Número de filas afectadas en nuestra base de datos</returns>
+</member><member name="M:ADatos.BDSQLite.EjecutarDMLEscalar(System.String@)">
+	<summary>
+EjecutarDMLEscalar. Función utilizada para devolver la ID de nuestra última inserción y comprobar la validación de un médico en el sistema.
+ </summary>
+	<param name="SQL">(String) Comando SQL a enviar a la base de datos.</param>
+	<returns>(Integer) _Escalar.</returns>
+</member><member name="M:ADatos.BDSQLite.dispose">
+	<summary>
+ Dispose. Encargada de decirle al recolector de basura que cierre la base de datos.
+ </summary>&gt;
+
+</member><member name="T:ADatos.BDSQLite">
+	<summary>
+ BDSQLite.vb
+ Contiene la clase BDSQLite.
+ Encargada de gestionar todos los métodos y funciones utilizados para la comunicación con base de datos.
+ </summary>
+	<author> Ángel Valera</author>
+</member><member name="M:ADatos.MedicoADO.#ctor">
+	<summary>
+Constructor MedicoADO. Establece la conexión con la base de datos llamando al constructor de BDSQLite.
+ </summary>
+</member><member name="M:ADatos.MedicoADO.Insertar(System.Int32,System.String,System.String)">
+	<summary>
+Función Insertar. Encargada de insertar un nuevo médico en nuestra base de datos.
+ </summary>
+	<param name="PId">(Integer)Id Persona PK.</param>
+	<param name="PNumColegiado">(String)Nº Colegiado médico.</param>
+	<param name="PPassword ">(String)Contraseña médico.</param>
+	<returns>(Integer) Inserciones. Número de médicos insertados en nuestra base de datos</returns>
+</member><member name="M:ADatos.MedicoADO.Modificar(System.Int32,System.String,System.String)">
+	<summary>
+ Modificar. Permite modificar los datos de un médico de nuestra base de datos determinado por su Id.
+ </summary>
+	<param name="PId">(Integer)Id Persona PK.</param>
+	<param name="PNumColegiado">(String)Nº Colegiado médico.</param>
+	<param name="PPassword ">(String)Contraseña médico.</param>
+	<returns>(Integer) Updates. Número de médicos modificados en nuestra base de datos</returns>
+</member><member name="M:ADatos.MedicoADO.Borrar(System.Int32)">
+	<summary>
+ Borrar. Permite borrar un médico de nuestra base de datos determinado por su Id.
+ </summary>
+	<param name="PId">(Integer)Id Médico.</param>
+	<returns>(Integer) Deletes. Número de médicos borrados en nuestra base de datos</returns>
+</member><member name="M:ADatos.MedicoADO.Consultar">
+	<summary>
+ Consultar. Permite consultar los datos de todos los médicos de nuestra base de datos.
+ </summary>
+	<returns>(DataTable) Tabla. DataTable con todos los datos de todos los médicos de nuestra base de datos.</returns>
+</member><member name="M:ADatos.MedicoADO.Buscar(System.String)">
+	<summary>
+ Buscar. Permite consultar todos los datos de todos los médicos de nuestra base de datos determinados por él formulario de búsqueda.
+ </summary>
+	<param name="PBusqueda ">(String)Cadena de búsqueda de nuestro formulario de búsqueda.</param>
+	<returns>(DataTable) Tabla. DataTable con todos los datos de todos los médicos de nuestra base de datos.</returns>
+</member><member name="M:ADatos.MedicoADO.Consultar(System.String)">
+	<summary>
+ Consultar. Permite consultar los datos de un médico determinado por su Nº Colegiado.
+ </summary>
+	<param name="PNumColegiado">(String)Nº Colegiado médico.</param>
+	<returns>(DataTable) Tabla. DataTable con todos los datos del médico devuelto por la consulta.</returns>
+</member><member name="M:ADatos.MedicoADO.ConsultarCompleto">
+	<summary>
+ Consultar. Permite consultar los datos de un médico determinado por su Nº Colegiado.
+ </summary>
+	<returns>(DataTable) Tabla. DataTable con todos los datos del médico devuelto por la consulta.</returns>
+</member><member name="M:ADatos.MedicoADO.Consultar(System.Int32)">
+	<summary>
+ Consultar. Permite consultar los datos de un médico determinado por su Id
+ </summary>
+	<param name="PId ">(String)Nº Colegiado médico.</param>
+	<returns>(DataTable) Tabla. DataTable con los datos del médico devuelto por la consulta.</returns>
+</member><member name="M:ADatos.MedicoADO.Existe(System.String)">
+	<summary>
+ Existe. Permite consultar si existe el paciente a insertar.
+ Utilizaremos este método para antes de insertar pacientes o médicos, para comprobar si ya existe en la base de datos.
+ </summary>
+	<returns>(Integer) Id.</returns>
+</member><member name="M:ADatos.MedicoADO.Validar(System.String,System.String)">
+	<summary>
+ Validar. Valida los datos de un médico para que pueda acceder al sistema
+ </summary>
+	<param name="PNumColegiado ">(String)Nº Colegiado médico.</param>
+	<param name="PPassword">(String)Password médico.</param>
+	<returns>(Boolean) Devuelve True si existe un médico con esa contraseña en la base de datos.</returns>
+</member><member name="M:ADatos.MedicoADO.dispose">
+	<summary>
+ Dispose. Encargada de decirle al recolector de basura que cierre la base de datos.
+ </summary>
+</member><member name="T:ADatos.MedicoADO">
+	<summary>
+ MedicoADO.vb
+ Contiene la clase MedicoADO.
+ Encargada de gestionar todos los métodos y funciones utilizados en la comunicación entre
+ los médicos de nuestra aplicación y la base de datos.
+ </summary>
+	<author> Ángel Valera</author>
+</member><member name="M:ADatos.CitaADO.#ctor">
+	<summary>
+Constructor CitaADO. Establece la conexión con la base de datos llamando al constructor de BDSQLite.
+ </summary>
+</member><member name="M:ADatos.CitaADO.Modificar(System.Int32,System.DateTime,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+	<summary>
+ Modificar. Permite modificar los datos de una cita de nuestra base de datos determinado por su Id.
+ </summary>
+	<param name="PId">(Integer)Id Cita PK.</param>
+	<param name="PHora">(String)Hora de la cita.</param>
+	<param name="PFecha">(Date)Fecha de la cita.</param>
+	<param name="PDuracion">(Integer)Duración de la cita.</param>
+	<param name="PTerminada">(Boolean)Cita terminada.</param>
+	<param name="PTipoCita">(Boolean)Tipo de cita (True=Inmediata False=Programada).</param>
+	<param name="PColaId">(Integer)Id de cola a la que pertenece la cita.</param>
+	<param name="PPacienteId">(Integer)Id del paciente de la cita.</param>
+	<returns>(Integer) Updates. Número de citas modificadas en nuestra base de datos</returns>
+</member><member name="M:ADatos.CitaADO.Borrar(System.Int32)">
+	<summary>
+ Borrar. Permite borrar una cita de nuestra base de datos determinado por su Id.
+ </summary>
+	<param name="PId">(Integer)Id Cita.</param>
+	<returns>(Integer) Deletes. Número de citas borradas en nuestra base de datos</returns>
+</member><member name="M:ADatos.CitaADO.BorrarPorCola(System.Int32)">
+	<summary>
+ Borrar. Permite borrar una cita de nuestra base de datos determinado por su Id_Cola.
+ </summary>
+	<param name="PColaId">(Integer)Id Cita.</param>
+	<returns>(Integer) Deletes. Número de citas borradas en nuestra base de datos</returns>
+</member><member name="M:ADatos.CitaADO.Consultar">
+	<summary>
+ Consultar. Permite consultar los datos de todos las citas de nuestra base de datos.
+ </summary>
+	<returns>(DataTable) Tabla. DataTable con los datos de las citas devueltas por la Select</returns>
+</member><member name="M:ADatos.CitaADO.Consultar(System.Int32)">
+	<summary>
+ Consultar. Permite consultar una citas en nuestra base de datos determinado por su Id.
+ </summary>
+	<param name="PId ">(Integer)Id Cita.</param>
+	<returns>(DataTable) Tabla. DataTable con los datos de la cita devuelta por la consulta.</returns>
+</member><member name="M:ADatos.CitaADO.Consultar(System.DateTime,System.Int32)">
+	<summary>
+ Consultar. Permite consultar los datos de todos las citas de nuestra base de datos en una fecha determinada.
+ </summary>
+	<param name="PFecha">(Fecha)Fecha de la cita.</param>
+	<returns>(DataTable) Tabla. DataTable con los datos de las citas devueltas por la Select</returns>
+</member><member name="M:ADatos.CitaADO.ConsultarCola(System.Int32)">
+	<summary>
+ ConsultarCola. Permite consultar las citas de una cola determinada por su Id.
+ </summary>
+	<param name="PColaId  ">(Integer)Id Cola.</param>
+	<returns>(DataTable) Tabla. DataTable con los datos de las citas devueltas por la Select</returns>
+</member><member name="M:ADatos.CitaADO.Consultar(System.UInt32)">
+	<summary>
+ Consultar. Permite consultar las citas de un paciente en nuestra base de datos determinado por su SIP.
+ </summary>
+	<param name="PSip">(Integer)SIP Paciente.</param>
+	<returns>(DataTable) Tabla. DataTable con los datos de la cita devuelta por la consulta.</returns>
+</member><member name="M:ADatos.CitaADO.Consultar(System.String,System.DateTime)">
+	<summary>
+ Consultar. Permite consultar las citas de un médico en nuestra base de datos determinado por su Nº Colegiado y una fecha concreta.
+ </summary>
+	<param name="PNumColegiado">(Integer)SIP Paciente.</param>
+	<returns>(DataTable) Tabla. DataTable con los datos de las citas devueltas por la Select</returns>
+</member><member name="M:ADatos.CitaADO.dispose">
+	<summary>
+ Dispose. Encargada de decirle al recolector de basura que cierre la base de datos.
+ </summary>
+</member><member name="T:ADatos.CitaADO">
+	<summary>
+ CitaADO.vb
+ Contiene la clase CitaADO.
+ Encargada de gestionar todos los métodos y funciones utilizados en la comunicación entre
+ las citas de nuestra aplicación y la base de datos.
+ </summary>
+	<author> Ángel Valera</author>
+</member><member name="M:ADatos.ColaADO.#ctor">
+	<summary>
+Constructor ColaADO. Establece la conexión con la base de datos llamando al constructor de BDSQLite.
+ </summary>
+</member><member name="M:ADatos.ColaADO.Insertar(System.Int32,System.String,System.Int32)">
+	<summary>
+Función Insertar. Encargada de insertar una nueva cola en nuestra base de datos.
+ </summary>
+	<param name="PNumeroCola">(Integer)Numero de cola.</param>
+	<param name="PMesa">(String)Nombre de mesa.</param>
+	<param name="PMedicoId">(Integer)Id de médico encargado de gestionar la cola.</param>
+	<returns>(Integer) Inserciones. Número de colas insertadas en nuestra base de datos</returns>
+</member><member name="M:ADatos.ColaADO.Modificar(System.Int32,System.Int32,System.String,System.Int32)">
+	<summary>
+ Modificar. Permite modificar los datos de una cola de nuestra base de datos determinada por su Id.
+ </summary>
+	<param name="PId">(Integer)Id Festivo PK.</param>
+	<param name="PNumeroCola">(Integer)Numero de cola.</param>
+	<param name="PMesa">(String)Nombre de mesa.</param>
+	<param name="PMedicoId">(Integer)Id de médico encargado de gestionar la cola.</param>
+	<returns>(Integer) Updates. Número de citas modificadas en nuestra base de datos</returns>
+</member><member name="M:ADatos.ColaADO.Borrar(System.Int32)">
+	<summary>
+ Borrar. Permite borrar una cola de nuestra base de datos determinada por su Id.
+ </summary>
+	<param name="PId">(Integer)Id Cola.</param>
+	<returns>(Integer) Deletes. Número de colas borradas en nuestra base de datos</returns>
+</member><member name="M:ADatos.ColaADO.Consultar">
+	<summary>
+ Consultar. Permite consultar los datos de todas las colas.
+ </summary>
+	<returns>(DataTable) Tabla. DataTable con los datos de todas las colas devueltas por la consulta.</returns>
+</member><member name="M:ADatos.ColaADO.Consultar(System.Int32)">
+	<summary>
+ Consultar. Permite consultar los datos de una cola determinada por si Id.
+ </summary>
+	<returns>(DataTable) Tabla. DataTable con los datos de la cola devuelta por la consulta determinada por su Id.</returns>
+</member><member name="M:ADatos.ColaADO.dispose">
+	<summary>
+ Dispose. Encargada de decirle al recolector de basura que cierre la base de datos.
+ </summary>
+</member><member name="T:ADatos.ColaADO">
+	<summary>
+ ColaADO.vb
+ Contiene la clase ColaADO.
+ Encargada de gestionar todos los métodos y funciones utilizados en la comunicación entre
+ las colas de nuestra aplicación y la base de datos.
+ </summary>
+	<author> Ángel Valera</author>
+</member><member name="M:ADatos.PersonaADO.#ctor">
+	<summary>
+Constructor PersonaADO. Establece la conexión con la base de datos llamando al constructor de BDSQLite.
+ </summary>
+</member><member name="M:ADatos.PersonaADO.Insertar(System.String,System.String,System.String,System.String,System.String,System.Int32)">
+	<summary>
+Función Insertar. Encargada de insertar una nueva persona en nuestra base de datos.
+ </summary>
+	<param name="PNombre">(String)Nombre Persona.</param>
+	<param name="PApellidos">(String)Apellidos Persona.</param>
+	<param name="PNif ">(String)NIF Persona.</param>
+	<param name="PEmail ">(String)Email Persona.</param>
+	<param name="PTelefono ">(String)Teléfono Persona.</param>
+	<param name="PBaja ">(Boolean)Situación Baja de Persona.</param>
+	<returns>(Integer) Inserciones. Número de personas insertadas en nuestra base de datos</returns>
+</member><member name="M:ADatos.PersonaADO.Modificar(System.Int32,System.String,System.String,System.String,System.String,System.String,System.Int32)">
+	<summary>
+ Modificar. Permite modificar los datos de una persona de nuestra base de datosdeterminada por su Id.
+ </summary>
+	<param name="PId">(Integer)Id Persona.</param>
+	<param name="PNombre">(String)Nombre Persona.</param>
+	<param name="PApellidos">(String)Apellidos Persona.</param>
+	<param name="PNif ">(String)NIF Persona.</param>
+	<param name="PEmail ">(String)Email Persona.</param>
+	<param name="PTelefono ">(String)Teléfono Persona.</param>
+	<param name="PBaja ">(Boolean)Situación Baja de Persona.</param>
+	<returns>(Integer) Updates. Número de personas modificadas en nuestra base de datos</returns>
+</member><member name="M:ADatos.PersonaADO.Borrar(System.Int32)">
+	<summary>
+ Borrar. Permite borrar una persona de nuestra base de datos determinada por su Id.
+ </summary>
+	<param name="PId">(Integer)Id Persona.</param>
+	<returns>(Integer) Deletes. Número de personas borradas en nuestra base de datos</returns>
+</member><member name="M:ADatos.PersonaADO.Consultar">
+	<summary>
+ Consultar. Permite consultar los datos de todas las personas.
+ </summary>
+	<returns>(List(Of Persona)) Prsona. Lista de personas con todos los datos de todas las direcciones de nuestra base de datos.</returns>
+</member><member name="M:ADatos.PersonaADO.ConsultarId">
+	<summary>
+ ConsultarId. Permite consultar la id de la última persona insertada.
+ Utilizaremos este método para poder insertar pacientes, médicos o direcciones con la Id de persona correcta.
+ </summary>
+	<returns>(Integer) Id.</returns>
+</member><member name="M:ADatos.PersonaADO.Existe(System.String)">
+	<summary>
+ Existe. Permite consultar si existe la persona a insertar.
+ Utilizaremos este método para antes de insertar pacientes o médicos, para comprobar si ya existe en la base de datos.
+ </summary>
+	<returns>(Integer) Id.</returns>
+</member><member name="M:ADatos.PersonaADO.UpdateBaja(System.Int32,System.Int32)">
+	<summary>
+ UpdateBaja. Permite modificar el valor del atributo Baja por el Id de persona.
+ </summary>
+	<param name="PId">(Integer)Id Persona.</param>
+	<param name="PBaja ">(Boolean)Situación Baja de Persona.</param>
+	<returns>(Integer) Updates. Número de personas modificadas en nuestra base de datos</returns>
+</member><member name="M:ADatos.PersonaADO.Dispose">
+	<summary>
+ Dispose. Encargada de decirle al recolector de basura que cierre la base de datos.
+ </summary>
+</member><member name="T:ADatos.PersonaADO">
+	<summary>
+ PersonaADO.vb
+ Contiene la clase PersonaADO.
+ Encargada de gestionar todos los métodos y funciones utilizados en la comunicación entre
+ las personas de nuestra aplicación y la base de datos.
+ </summary>
+	<author> Ángel Valera</author>
+</member><member name="F:ADatos.Cola._ADO">
+	<summary>
+Propiedad _ADO (PersonaADO). Objeto para acceder a BD.
+ </summary>
+</member><member name="M:ADatos.Cola.#ctor">
+	<summary>
+Constructor Cola.
+ </summary>
+</member><member name="M:ADatos.Cola.#ctor(System.Int32@,System.String@,System.Int32@)">
+	<summary>
+Constructor Cola.
+ </summary>
+	<param name="PNumeroCola">(Integer)Numero de cola.</param>
+	<param name="PMesa">(String)Nombre de mesa.</param>
+	<param name="PMedicoId">(Integer)Id de médico encargado de gestionar la cola.</param>
+</member><member name="M:ADatos.Cola.Modificar(System.Int32@,System.Int32@,System.String@,System.Int32@)">
+	<summary>
+ Modificar. Permite modificar los datos de un festivo determinado por su Id.
+ </summary>
+	<param name="PId">(Integer)Id Festivo PK.</param>
+	<param name="PNumeroCola">(Integer)Numero de cola.</param>
+	<param name="PMesa">(String)Nombre de mesa.</param>
+	<param name="PMedicoId">(Integer)Id de médico encargado de gestionar la cola.</param>
+</member><member name="M:ADatos.Cola.Borrar(System.Int32@)">
+	<summary>
+ Borrar. Permite borrar una cola determinado por su Id.
+ </summary>
+	<param name="PId">(Integer)Id Cola.</param>
+</member><member name="M:ADatos.Cola.Consultar">
+	<summary>
+ Consultar. Permite consultar los datos de todas las colas.
+ </summary>
+	<returns>(List of (Cola)) Colas. Lista con los datos de todas las colas devueltas por la consulta.</returns>
+</member><member name="M:ADatos.Cola.ConsultarTodos">
+	<summary>
+ Consultar. Permite consultar los datos de todas las colas.
+ </summary>
+	<returns>(List of (Cola)) Colas. Lista con los datos de todas las colas devueltas por la consulta.</returns>
+</member><member name="M:ADatos.Cola.Consultar(System.Int32@)">
+	<summary>
+ Consultar. Permite consultar los datos de una cola determinada por su Id.
+ </summary>
+	<returns>(Cola) Col. Objeto Cola con los datos de la cola devuelta por la consulta determinada por su Id.</returns>
+</member><member name="P:ADatos.Cola.Id">
+	<summary>
+Propiedad Id (Integer) Clave primaria en tabla colas.
+</summary>
+</member><member name="P:ADatos.Cola.NumeroCola">
+	<summary>
+NumeroCola (Integer) Número de la cola.
+</summary>
+</member><member name="P:ADatos.Cola.Mesa">
+	<summary>
+Propiedad Mesa (String) Nombre de la mesa de la cola.
+</summary>
+</member><member name="P:ADatos.Cola.MedicoId">
+	<summary>
+Propiedad MedicoId (Integer) Id del médico.
+</summary>
+</member><member name="M:ADatos.Cola.Dispose">
+	<summary>
+ Dispose. Encargada de decirle al recolector de basura que resetee los atributos de nuestra clase.
+ </summary>
+</member><member name="T:ADatos.Cola">
+	<summary>
+ Cola.vb
+ Contiene la clase Cola.
+ Encargada de crear, modificar, consultar y eliminar las colas de nuestra aplicación.
+ </summary>
+	<author> Ángel Valera</author>
+</member><member name="F:ADatos.Direccion._ADO">
+	<summary>
+Propiedad _ADO (PersonaADO). Objeto para acceder a BD.
+ </summary>
+</member><member name="M:ADatos.Direccion.#ctor">
+	<summary>
+Constructor Direccion.
+ </summary>
+</member><member name="M:ADatos.Direccion.#ctor(System.String@,System.String@,System.String@,System.Int32@,System.Int32@,System.String@,System.String@,System.String@,System.String@,System.String@,System.String@,System.String@,System.String@,System.String@,System.Int32@)">
+	<summary>
+Constructor Direccion.
+ </summary>
+	<param name="PTipoVia">(String)Tipo Vía.</param>
+	<param name="PVia">(String)Nombre Vía.</param>
+	<param name="PNumero">(String)Número Vía.</param>
+	<param name="PKilometro">(Integer)Kilómetro Vía.</param>
+	<param name="PHectometro">(Integer)Hectómetro Vía.</param>
+	<param name="PBloque">(String)Bloque Vía.</param>
+	<param name="PPortal">(String)Portal Vía.</param>
+	<param name="PEscalera">(String)Escalera.</param>
+	<param name="Pplanta">(String)Planta.</param>
+	<param name="PPuerta">(String)Puerta.</param>
+	<param name="PLocalidad">(String)Localidad.</param>
+	<param name="PMunicipio">(String)Municipio.</param>
+	<param name="PProvincia">(String)Provincia.</param>
+	<param name="PCodPostal">(String)Código Postal.</param>
+	<param name="PPersonaId ">(Integer)Id Persona.</param>
+</member><member name="M:ADatos.Direccion.Modificar(System.String@,System.String@,System.String@,System.Int32@,System.Int32@,System.String@,System.String@,System.String@,System.String@,System.String@,System.String@,System.String@,System.String@,System.String@,System.Int32@)">
+	<summary>
+ Modificar. Permite modificar los datos de una dirección determinada por su Id.
+ </summary>
+	<param name="PTipoVia">(String)Tipo Vía.</param>
+	<param name="PVia">(String)Nombre Vía.</param>
+	<param name="PNumero">(String)Número Vía.</param>
+	<param name="PKilometro">(Integer)Kilómetro Vía.</param>
+	<param name="PHectometro">(Integer)Hectómetro Vía.</param>
+	<param name="PBloque">(String)Bloque Vía.</param>
+	<param name="PPortal">(String)Portal Vía.</param>
+	<param name="PEscalera">(String)Escalera.</param>
+	<param name="Pplanta">(String)Planta.</param>
+	<param name="PPuerta">(String)Puerta.</param>
+	<param name="PLocalidad">(String)Localidad.</param>
+	<param name="PMunicipio">(String)Municipio.</param>
+	<param name="PProvincia">(String)Provincia.</param>
+	<param name="PCodPostal">(String)Código Postal.</param>
+	<param name="PPersonaId ">(Integer)Id Persona.</param>
+</member><member name="M:ADatos.Direccion.Borrar(System.Int32@)">
+	<summary>
+ Borrar. Permite borrar una dirección determinada por su Id.
+ </summary>
+	<param name="PId">(Integer)Id Dirección.</param>
+</member><member name="M:ADatos.Direccion.Consultar">
+	<summary>
+ Consultar. Permite consultar los datos de todos las direcciones.
+ </summary>
+	<returns>(List(Of Direccion)) Direccion. Lista de direcciones con todos los datos de todas las direcciones de nuestra base de datos.</returns>
+</member><member name="M:ADatos.Direccion.Consultar(System.Int32@)">
+	<summary>
+ Consultar. Permite consultar los datos de una dirección determinada por el Id de Person.
+ </summary>
+	<param name="PId  ">(Integer)Id de dirección a consultar.</param>
+	<returns>(Direccion) Dir. Objeto Dirección con los datos de la dirección devuelta por la consulta.</returns>
+</member><member name="M:ADatos.Direccion.ConsultarPorPersona(System.Int32@)">
+	<summary>
+ Consultar. Permite consultar los datos de una dirección determinada por el Id de Person.
+ </summary>
+	<param name="PPersonaId ">(Integer)Id de persona a consultar.</param>
+	<returns>(Direccion) Dir. Objeto Dirección con los datos de la dirección devuelta por la consulta.</returns>
+</member><member name="P:ADatos.Direccion.Id">
+	<summary>
+Propiedad Id (Integer) Clave primaria en tabla direcciones.
+</summary>
+</member><member name="P:ADatos.Direccion.TipoVia">
+	<summary>
+Propiedad TipoVía(String)Tipo Vía.
+</summary>
+</member><member name="P:ADatos.Direccion.Via">
+	<summary>
+Propiedad Vía (String)Nombre Vía.
+</summary>
+</member><member name="P:ADatos.Direccion.Numero">
+	<summary>
+Propiedad Numero (String) Número Vía.
+</summary>
+</member><member name="P:ADatos.Direccion.Kilometro">
+	<summary>
+Propiedad Kilometro (Integer) Kilómetro vía.
+</summary>
+</member><member name="P:ADatos.Direccion.Hectometro">
+	<summary>
+Propiedad Hectómetro (Integer) Hectómetro vía.
+</summary>
+</member><member name="P:ADatos.Direccion.Bloque">
+	<summary>
+Propiedad Bloque (String) Bloque vía.
+</summary>
+</member><member name="P:ADatos.Direccion.Portal">
+	<summary>
+Propiedad Portal (Integer) Portal dirección.
+</summary>
+</member><member name="P:ADatos.Direccion.Escalera">
+	<summary>
+Propiedad Escalera (String) Escalera dirección.
+</summary>
+</member><member name="P:ADatos.Direccion.Planta">
+	<summary>
+Propiedad Planta (String) Planta dirección.
+</summary>
+</member><member name="P:ADatos.Direccion.Puerta">
+	<summary>
+Propiedad Puerta (String) Puerta dirección.
+</summary>
+</member><member name="P:ADatos.Direccion.Localidad">
+	<summary>
+Propiedad Localidad (String) Localidad dirección.
+</summary>
+</member><member name="P:ADatos.Direccion.Municipio">
+	<summary>
+Propiedad Municipio (String) Municipio dirección.
+</summary>
+</member><member name="P:ADatos.Direccion.Provincia">
+	<summary>
+Propiedad Provincia (String) Provincia dirección.
+</summary>
+</member><member name="P:ADatos.Direccion.CodPostal">
+	<summary>
+Propiedad CodPostal (String) Código Postal dirección.
+</summary>
+</member><member name="P:ADatos.Direccion.PersonaId">
+	<summary>
+Propiedad PersonaId (Integer) Id de la Persona que vive en esta dirección.
+</summary>
+</member><member name="M:ADatos.Direccion.Dispose">
+	<summary>
+ Dispose. Encargada de decirle al recolector de basura que resetee los atributos de nuestra clase.
+ </summary>
+</member><member name="T:ADatos.Direccion">
+	<summary>
+ Direccion.vb
+ Contiene la clase Direccion.
+ Encargada de crear, modificar, consultar y eliminar las direcciones de las personas de nuestra aplicación.
+ </summary>
+	<author> Ángel Valera</author>
+</member><member name="F:ADatos.Festivo._ADO">
+	<summary>
+Propiedad _ADO (PersonaADO). Objeto para acceder a BD.
+ </summary>
+</member><member name="M:ADatos.Festivo.#ctor">
+	<summary>
+Constructor Festivo.
+ </summary>
+</member><member name="M:ADatos.Festivo.#ctor(System.DateTime@,System.String@)">
+	<summary>
+Constructor Festivo.
+ </summary>
+	<param name="PFechaFestivo">(Date)Fecha Festivo.</param>
+	<param name="PNombreFestivo ">(Date)Nombre Festivo.</param>
+</member><member name="M:ADatos.Festivo.Modificar(System.Int32@,System.DateTime@,System.String@)">
+	<summary>
+ Modificar. Permite modificar los datos de un festivo determinado por su Id.
+ </summary>
+	<param name="PId">(Integer)Id Festivo PK.</param>
+	<param name="PFechaFestivo">(Date)Fecha Festivo.</param>
+	<param name="PNombreFestivo ">(Date)Nombre Festivo.</param>
+</member><member name="M:ADatos.Festivo.Borrar(System.Int32@)">
+	<summary>
+ Borrar. Permite borrar un festivo determinado por su Id.
+ </summary>
+	<param name="PId">(Integer)Id Festivo.</param>
+</member><member name="M:ADatos.Festivo.Consultar">
+	<summary>
+ Consultar. Permite consultar los datos de todos los festivos.
+ </summary>
+	<returns>(List(Of Festivo)) Festivos. Lista de festivos con todos los datos de todas los festivos de nuestra base de datos.</returns>
+</member><member name="M:ADatos.Festivo.Consultar(System.Int32@)">
+	<summary>
+ Consultar. Permite consultar los datos de un festivo de nuestra base de datos determinados por su Id
+ </summary>
+	<param name="PId ">(Integer)Id de festivo.</param>
+	<returns>(Festivo) Fes. Objeto Festivo con los datos del festivo devuelto por la consulta.</returns>
+</member><member name="M:ADatos.Festivo.Consultar(System.DateTime@)">
+	<summary>
+ Consultar. Permite consultar los datos de un festivo de nuestra base de datos determinados por una Fecha
+ </summary>
+	<param name="PFecha ">(Date)Fecha de festivo.</param>
+	<returns>(Festivo) Fes. Objeto Festivo con los datos del festivo devuelto por la consulta.</returns>
+</member><member name="M:ADatos.Festivo.Consultar(System.String@)">
+	<summary>
+ Consultar. Permite consultar los datos de todos los festivos de un año determinado.
+ </summary>
+	<param name="PAnyo">(String)Año a consultar.</param>
+	<returns>(List(Of Festivo)) Festivos. Lista de festivos con todos los datos de todas los festivos de nuestra base de datos.</returns>
+</member><member name="P:ADatos.Festivo.Id">
+	<summary>
+Propiedad Id (Integer) Clave primaria en tabla festivos.
+</summary>
+</member><member name="P:ADatos.Festivo.FechaFestivo">
+	<summary>
+Propiedad FechaFestivo (Date) Fecha festivo.
+</summary>
+</member><member name="P:ADatos.Festivo.NombreFestivo">
+	<summary>
+Propiedad NombreFestivo (String) Nombre festivo.
+</summary>
+</member><member name="M:ADatos.Festivo.Dispose">
+	<summary>
+ Dispose. Encargada de decirle al recolector de basura que resetee los atributos de nuestra clase.
+ </summary>
+</member><member name="T:ADatos.Festivo">
+	<summary>
+ Festivo.vb
+ Contiene la clase Festivo.
+ Encargada de crear, modificar, consultar y eliminar los festivos de nuestra aplicación.
+ </summary>
+	<author> Ángel Valera</author>
+</member><member name="F:ADatos.Cita._ADO">
+	<summary>
+Propiedad _ADO (PersonaADO). Objeto para acceder a BD.
+ </summary>
+</member><member name="M:ADatos.Cita.#ctor">
+	<summary>
+Constructor Cita.
+ </summary>
+</member><member name="M:ADatos.Cita.Modificar(System.Int32@,System.DateTime@,System.String@,System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Int32@)">
+	<summary>
+ Modificar. Permite modificar los datos de una cita determinada por su Id.
+ </summary>
+	<param name="PId">(Integer)Id Cita PK.</param>
+	<param name="PHora">(Integer)Hora de la cita.</param>
+	<param name="PFecha">(Date)Fecha de la cita.</param>
+	<param name="PDuracion">(Integer)Duración de la cita.</param>
+	<param name="PTerminada">(Boolean)Cita terminada.</param>
+	<param name="PTipoCita">(Boolean)Tipo de cita (True=Inmediata False=Programada).</param>
+	<param name="PColaId">(Integer)Id de cola a la que pertenece la cita.</param>
+	<param name="PPacienteId">(Integer)Id del paciente de la cita.</param>
+</member><member name="M:ADatos.Cita.Borrar(System.Int32@)">
+	<summary>
+ Borrar. Permite borrar una cita determinada por su Id.
+ </summary>
+	<param name="PId">(Integer)Id Cita.</param>
+</member><member name="M:ADatos.Cita.Consultar">
+	<summary>
+ Consultar. Permite consultar los datos de todas las citas.
+ </summary>
+	<returns>(List of (Cita)). Citas. Lista de citas con los datos de las citas devueltas por la Select</returns>
+</member><member name="M:ADatos.Cita.Consultar(System.Int32@)">
+	<summary>
+ Consultar. Permite consultar los datos de las citas determinadas por su Id.
+ </summary>
+	<param name="PId ">(Integer)Id cita.</param>
+	<returns>(Cita). Cit. Objeto cita con los datos de la cita devueltas por la Select</returns>
+</member><member name="M:ADatos.Cita.Consultar(System.DateTime@,System.Int32@)">
+	<summary>
+ Consultar. Permite consultar los datos de todos las citas de nuestra base de datos en una fecha determinada.
+ </summary>
+	<param name="PFecha">(Fecha)Fecha de la cita.</param>
+	<param name="PColaId">Id de la Cola</param>
+	<returns>(List of (Cita)). Citas. Lista de citas con los datos de las citas devueltas por la Select</returns>
+</member><member name="M:ADatos.Cita.ConsultarHoras(System.DateTime@,System.Int32@)">
+	<summary>
+ Consultar. Permite consultar los datos de todos las citas de nuestra base de datos en una fecha determinada.
+ </summary>
+	<param name="PFecha">(Fecha)Fecha de la cita.</param>
+	<param name="PColaId">Id de la Cola</param>
+	<returns>(List of (Cita)). Citas. Lista de citas con los datos de las citas devueltas por la Select</returns>
+</member><member name="M:ADatos.Cita.ConsultarCola(System.Int32@)">
+	<summary>
+ ConsultarCola. Permite consultar los datos de todas las citas de una cola determiada por su Id.
+ </summary>
+	<returns>(List of (Cita)). Citas. Lista de citas con los datos de las citas devueltas por la Select</returns>
+</member><member name="M:ADatos.Cita.Consultar(System.UInt32@)">
+	<summary>
+ Consultar. Permite consultar los datos de las citas determinadas por la SIP de un paciente.
+ </summary>
+	<param name="PSip">(Integer)SIP paciente.</param>
+	<returns>(Cita). Cit. Objeto cita con los datos de la cita devueltas por la Select</returns>
+</member><member name="M:ADatos.Cita.Consultar(System.String@,System.DateTime@)">
+	<summary>
+ Consultar. Permite consultar los datos de las citas en una fecha de un médico determinado por su Nº de colegiado.
+ </summary>
+	<param name="PNumColegiado">(Integer)Nº Colegiado a consultar.</param>
+	<param name="PFecha ">(Integer)Fecha de la Cita.</param>
+	<returns>(List of (Cita)). Citas. Lista de citas con los datos de las citas devueltas por la Select</returns>
+</member><member name="P:ADatos.Cita.Id">
+	<summary>
+Propiedad Id (Integer) Clave primaria en tabla citas.
+</summary>
+</member><member name="P:ADatos.Cita.Fecha">
+	<summary>
+Propiedad Fecha (Date) Fecha de la cita.
+</summary>
+</member><member name="P:ADatos.Cita.Hora">
+	<summary>
+Propiedad Hora (String) Hora de la cita.
+</summary>
+</member><member name="P:ADatos.Cita.Duracion">
+	<summary>
+Propiedad Duracion (Integer) Duración de la cita.
+</summary>
+</member><member name="P:ADatos.Cita.Terminada">
+	<summary>
+Propiedad Terminada (Boolean) Cita terminada.
+</summary>
+</member><member name="P:ADatos.Cita.TipoCita">
+	<summary> 
+Propiedad TipoCita (Boolean) Tipo de cita (True=Inmediata False=Programada). 
+</summary>
+</member><member name="P:ADatos.Cita.ColaId">
+	<summary>
+Propiedad ColaId (Integer)Id de cola a la que pertenece la cita.
+</summary>
+</member><member name="P:ADatos.Cita.PacienteId">
+	<summary>
+Propiedad PacienteId (Integer)Id del paciente al que pertenece la cita.
+</summary>
+</member><member name="M:ADatos.Cita.Dispose">
+	<summary>
+ Dispose. Encargada de decirle al recolector de basura que resetee los atributos de nuestra clase.
+ </summary>
+</member><member name="T:ADatos.Cita">
+	<summary>
+ Cita.vb
+ Contiene la clase Cita.
+ Encargada de crear, modificar, consultar y eliminar las citas de nuestra aplicación.
+ </summary>
+	<author> Ángel Valera</author>
+</member><member name="M:ADatos.PacienteADO.#ctor">
+	<summary>
+Constructor PacienteADO. Establece la conexión con la base de datos llamando al constructor de BDSQLite.
+ </summary>
+</member><member name="M:ADatos.PacienteADO.Insertar(System.Int32,System.UInt64)">
+	<summary>
+Función Insertar. Encargada de insertar un nuevo paciente en nuestra base de datos.
+ </summary>
+	<param name="PId">(Integer)Id Persona PK.</param>
+	<param name="PSip">(ULong)SIP paciente.</param>
+	<returns>(Integer) Inserciones. Número de pacientes insertados en nuestra base de datos</returns>
+</member><member name="M:ADatos.PacienteADO.Modificar(System.Int32,System.UInt64)">
+	<summary>
+ Modificar. Permite modificar los datos de un paciente de nuestra base de datos determinado por su Id.
+ </summary>
+	<param name="PId">(Integer)Id Persona PK.</param>
+	<param name="PSip">(ULong)SIP paciente.</param>
+	<returns>(Integer) Updates. Número de pacientes modificados en nuestra base de datos</returns>
+</member><member name="M:ADatos.PacienteADO.Borrar(System.Int32)">
+	<summary>
+ Borrar. Permite borrar un paciente de nuestra base de datos determinado por su Id.
+ </summary>
+	<param name="PId">(Integer)Id Persona.</param>
+	<returns>(Integer) Deletes. Número de pacientes borrados en nuestra base de datos</returns>
+</member><member name="M:ADatos.PacienteADO.Consultar">
+	<summary>
+ Consultar. Permite consultar los datos de todos los pacientes de nuestra base de datos.
+ </summary>
+	<returns>(DataTable) Tabla. DataTable con todos los datos de todas los pacientes de nuestra base de datos.</returns>
+</member><member name="M:ADatos.PacienteADO.Consultar(System.Int32)">
+	<summary>
+ Consultar. Permite consultar los datos de un paciente determinado por su ID.
+ </summary>
+	<param name="PId">(Integer)Id Paciente.</param>
+	<returns>(DataTable) Tabla. DataTable con los datos del paciente devuelto por la consulta.</returns>
+</member><member name="M:ADatos.PacienteADO.Buscar(System.String)">
+	<summary>
+ Buscar. Permite consultar todos los datos de todos los pacientes de nuestra base de datos determinados por él formulario de búsqueda.
+ </summary>
+	<param name="PBusqueda ">(String)Cadena de búsqueda de nuestro formulario de búsqueda.</param>
+	<returns>(DataTable) Tabla. DataTable con todos los datos de todos los pacientes de nuestra base de datos.</returns>
+</member><member name="M:ADatos.PacienteADO.Consultar(System.UInt64)">
+	<summary>
+ Consultar. Permite consultar los datos de un paciente determinado por su SIP.
+ </summary>
+	<param name="PSip">(Integer)SIP Paciente.</param>
+	<returns>(DataTable) Tabla. DataTable con los todos los datos del paciente devuelto por la consulta.</returns>
+</member><member name="M:ADatos.PacienteADO.Existe(System.UInt64)">
+	<summary>
+ Existe. Permite consultar si existe el paciente a insertar.
+ Utilizaremos este método para antes de insertar pacientes o médicos, para comprobar si ya existe en la base de datos.
+ </summary>
+	<returns>(Integer) Id.</returns>
+</member><member name="M:ADatos.PacienteADO.dispose">
+	<summary>
+ Dispose. Encargada de decirle al recolector de basura que cierre la base de datos.
+ </summary>
+</member><member name="T:ADatos.PacienteADO">
+	<summary>
+ PacienteADO.vb
+ Contiene la clase PacienteADO.
+ Encargada de gestionar todos los métodos y funciones utilizados en la comunicación entre
+ los pacientes de nuestra aplicación y la base de datos.
+ </summary>
+	<author> Ángel Valera</author>
+</member><member name="F:ADatos.Paciente._ADO">
+	<summary>
+Propiedad _ADO (PersonaADO). Objeto para acceder a BD.
+ </summary>
+</member><member name="M:ADatos.Paciente.#ctor">
+	<summary>
+Constructor Paciente.
+ </summary>
+</member><member name="M:ADatos.Paciente.#ctor(System.Int32@,System.UInt64@,System.String@,System.String@,System.String@,System.String@,System.String@,System.Int32@)">
+	<summary>
+Constructor Paciente.
+ </summary>
+	<param name="PId">(Integer)Id Persona PK.</param>
+	<param name="PSip">(ULong)SIP paciente.</param>
+	<param name="PNombre">(String)Nombre Persona.</param>
+	<param name="PApellidos">(String)Apellidos Persona.</param>
+	<param name="PNif ">(String)NIF Persona.</param>
+	<param name="PEmail ">(String)Email Persona.</param>
+	<param name="PTelefono ">(String)Teléfono Persona.</param>
+	<param name="PBaja ">(Boolean)Situación Baja de Persona.</param>
+</member><member name="M:ADatos.Paciente.Modificar(System.Int32@,System.UInt64@,System.String@,System.String@,System.String@,System.String@,System.String@,System.Int32@)">
+	<summary>
+ Modificar. Permite modificar los datos de un paciente determinada por su Id.
+ </summary>
+	<param name="PId">(Integer)Id Persona PK.</param>
+	<param name="PSip">(ULong)SIP paciente.</param>
+	<param name="PNombre">(String)Nombre Persona.</param>
+	<param name="PApellidos">(String)Apellidos Persona.</param>
+	<param name="PNif ">(String)NIF Persona.</param>
+	<param name="PEmail ">(String)Email Persona.</param>
+	<param name="PTelefono ">(String)Teléfono Persona.</param>
+	<param name="PBaja ">(Boolean)Situación Baja de Persona.</param>
+</member><member name="M:ADatos.Paciente.Borrar(System.Int32@)">
+	<summary>
+ Borrar. Permite borrar una persona determinada por su Id.
+ </summary>
+	<param name="PId">(Integer)Id Persona.</param>
+</member><member name="M:ADatos.Paciente.Consultar">
+	<summary>
+ Consultar. Permite consultar los datos de todos los pacientes.
+ </summary>
+	<returns>(List(Of Paciente)) Pacientes. Lista de pacientes con todos los datos de todas los pacientes de nuestra base de datos.</returns>
+</member><member name="M:ADatos.Paciente.Consultar(System.Int32@)">
+	<summary>
+ Consultar. Permite consultar los datos de un paciente determinados por su Id.
+ </summary>
+	<param name="PId">(Integer)Id Paciente.</param>
+	<returns>(DataTable) Result. DataTable con los datos del paciente devuelto por la consulta.</returns>
+</member><member name="M:ADatos.Paciente.Consultar(System.UInt64@)">
+	<summary>
+ Consultar. Permite consultar los datos de un paciente determinados por su SIP.
+ </summary>
+	<param name="PSip">(Integer)SIP Paciente.</param>
+	<returns>(Paciente) Pac. Objeto Paciente con los todos los datos del paciente devuelto por la consulta.</returns>
+</member><member name="M:ADatos.Paciente.Existe(System.UInt64@)">
+	<summary>
+ Existe. Permite consultar si existe el paciente a insertar.
+ Utilizaremos este método para antes de insertar pacientes o médicos, para comprobar si ya existe en la base de datos.
+ </summary>
+	<returns>(Boolean) Existe. Id de la última persona insertada.</returns>
+</member><member name="M:ADatos.Paciente.Buscar(System.String@)">
+	<summary>
+ Buscar. Permite consultar todos los datos de todos los pacientes de nuestra base de datos determinados por él formulario de búsqueda.
+ </summary>
+	<param name="PBusqueda ">(String)Cadena de búsqueda de nuestro formulario de búsqueda.</param>
+	<returns>Datatable) Result. DataTable con todos los datos de todas los pacientes de nuestra base de datos.</returns>
+</member><member name="P:ADatos.Paciente.Id">
+	<summary>
+Propiedad Id (Integer) Clave primaria en tabla pacientes, coincide con Id tabla Persona.
+</summary>
+</member><member name="P:ADatos.Paciente.Sip">
+	<summary>
+Propiedad SIP (ULong) Clave primaria en tabla personas.SIP Paciente.
+</summary>
+</member><member name="M:ADatos.Paciente.Dispose">
+	<summary>
+ Dispose. Encargada de decirle al recolector de basura que resetee los atributos de nuestra clase.
+ </summary>
+</member><member name="T:ADatos.Paciente">
+	<summary>
+ Paciente.vb
+ Contiene la clase Paciente. Hereda de Persona 
+ Encargada de crear, modificar, consultar y eliminar pacientes de nuestra aplicación.
+ </summary>
+	<author> Ángel Valera</author>
+</member>
+</members>
+</doc>

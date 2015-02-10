@@ -1,0 +1,8 @@
+C:\Users\Angel\Documents\Visual Studio 2013\Projects\Gestion de Turnos\Negocio\bin\Debug\Negocio.dll
+C:\Users\Angel\Documents\Visual Studio 2013\Projects\Gestion de Turnos\Negocio\bin\Debug\Negocio.pdb
+C:\Users\Angel\Documents\Visual Studio 2013\Projects\Gestion de Turnos\Negocio\bin\Debug\Negocio.xml
+C:\Users\Angel\Documents\Visual Studio 2013\Projects\Gestion de Turnos\Negocio\obj\Debug\Negocio.Resources.resources
+C:\Users\Angel\Documents\Visual Studio 2013\Projects\Gestion de Turnos\Negocio\obj\Debug\Negocio.vbproj.GenerateResource.Cache
+C:\Users\Angel\Documents\Visual Studio 2013\Projects\Gestion de Turnos\Negocio\obj\Debug\Negocio.dll
+C:\Users\Angel\Documents\Visual Studio 2013\Projects\Gestion de Turnos\Negocio\obj\Debug\Negocio.xml
+C:\Users\Angel\Documents\Visual Studio 2013\Projects\Gestion de Turnos\Negocio\obj\Debug\Negocio.pdb

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="NEGOCIO">
+    <Position X="0.5" Y="0.5" Height="0.291" Width="0.794" />
+  </Comment>
+  <Class Name="Negocio.NegocioMostrador">
+    <Position X="2" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>hAVABABAABAKAAASAhgIAgIAQAIAgAoCAAABAAAAAAA=</HashCode>
+      <FileName>NegocioMostrador.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Negocio.NegocioPanel">
+    <Position X="5.25" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAgAAAAACAAAAAA=</HashCode>
+      <FileName>NegocioPanel.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Negocio.NegocioSiguiente">
+    <Position X="5.25" Y="2.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAABABACAAAAAAAAAAAAAAAgAAAABAAAAAAA=</HashCode>
+      <FileName>NegocioSiguiente.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

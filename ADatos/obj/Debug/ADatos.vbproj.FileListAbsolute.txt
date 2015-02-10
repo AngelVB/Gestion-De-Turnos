@@ -1,0 +1,27 @@
+C:\Users\Angel\Documents\Visual Studio 2013\Projects\Gestion de Turnos\ADatos\bin\Debug\ADatos.dll
+C:\Users\Angel\Documents\Visual Studio 2013\Projects\Gestion de Turnos\ADatos\bin\Debug\ADatos.pdb
+C:\Users\Angel\Documents\Visual Studio 2013\Projects\Gestion de Turnos\ADatos\bin\Debug\ADatos.xml
+C:\Users\Angel\Documents\Visual Studio 2013\Projects\Gestion de Turnos\ADatos\obj\Debug\ADatos.vbprojResolveAssemblyReference.cache
+C:\Users\Angel\Documents\Visual Studio 2013\Projects\Gestion de Turnos\ADatos\obj\Debug\ADatos.Resources.resources
+C:\Users\Angel\Documents\Visual Studio 2013\Projects\Gestion de Turnos\ADatos\obj\Debug\ADatos.vbproj.GenerateResource.Cache
+C:\Users\Angel\Documents\Visual Studio 2013\Projects\Gestion de Turnos\ADatos\obj\Debug\ADatos.dll
+C:\Users\Angel\Documents\Visual Studio 2013\Projects\Gestion de Turnos\ADatos\obj\Debug\ADatos.xml
+C:\Users\Angel\Documents\Visual Studio 2013\Projects\Gestion de Turnos\ADatos\obj\Debug\ADatos.pdb
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre 1\ejercicios\Gestion de Turnos\ADatos\bin\Debug\ADatos.dll.config
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre 1\ejercicios\Gestion de Turnos\ADatos\bin\Debug\ADatos.dll
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre 1\ejercicios\Gestion de Turnos\ADatos\bin\Debug\ADatos.pdb
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre 1\ejercicios\Gestion de Turnos\ADatos\bin\Debug\ADatos.xml
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre 1\ejercicios\Gestion de Turnos\ADatos\obj\Debug\ADatos.Resources.resources
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre 1\ejercicios\Gestion de Turnos\ADatos\obj\Debug\ADatos.vbproj.GenerateResource.Cache
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre 1\ejercicios\Gestion de Turnos\ADatos\obj\Debug\ADatos.dll
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre 1\ejercicios\Gestion de Turnos\ADatos\obj\Debug\ADatos.xml
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre 1\ejercicios\Gestion de Turnos\ADatos\obj\Debug\ADatos.pdb
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\ADatos\bin\Debug\ADatos.dll.config
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\ADatos\bin\Debug\ADatos.dll
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\ADatos\bin\Debug\ADatos.pdb
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\ADatos\bin\Debug\ADatos.xml
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\ADatos\obj\Debug\ADatos.Resources.resources
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\ADatos\obj\Debug\ADatos.vbproj.GenerateResource.Cache
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\ADatos\obj\Debug\ADatos.dll
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\ADatos\obj\Debug\ADatos.xml
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\ADatos\obj\Debug\ADatos.pdb

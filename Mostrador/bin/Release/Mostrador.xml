@@ -1,0 +1,695 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Mostrador
+</name>
+</assembly>
+<members>
+<member name="M:Mostrador.Altas.Button1_Click(System.Object,System.EventArgs)">
+	<summary>
+Button1_Click
+ Validamos e insertamos/modificamos los datos de personas introducidos.
+ </summary>
+</member><member name="M:Mostrador.Altas.AltaPaciente_Enter(System.Object,System.EventArgs)">
+	<summary>
+AltaPaciente_Enter
+ Evento OnEnter. Preparamos el formulario y Cargamos datos en caso de venir desde una búsqueda.
+ </summary>
+</member><member name="M:Mostrador.Altas.Bloquear(System.Boolean@)">
+	<summary>
+Bloquear
+ Pone todos los controles del formulario como solo lectura.
+ </summary>
+</member><member name="M:Mostrador.Altas.Limpiar">
+	<summary>
+Limpiar
+ Vacía los datos de todos los controles del formulario
+ </summary>
+</member><member name="M:Mostrador.Altas.DNI_KeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+	<summary>
+DNI_KeyPress
+ Evento KeyPress de DNI. Comprueba si existe o no una persona en nuestra base de datos, dándonos opción de cargar los datos.
+ </summary>
+</member><member name="M:Mostrador.Altas.RellenarCampos(System.Data.DataRow@)">
+	<summary>
+RellenarCampos
+ Rellena los controles con los datos de la persona buscada.
+ </summary>
+</member><member name="M:Mostrador.Altas.Verificar_NIF(System.String)">
+	<summary>
+ Comprueba si es un NIF válido
+ No usar espacios ni separadores para la letra
+ Devuelve True si es correcto
+ </summary>
+	<returns>Boolean</returns>
+</member><member name="M:Mostrador.Altas.Resetear">
+	<summary>
+Resetear
+ Resetea las propiedades de los campos del formulario.
+ </summary>
+</member><member name="M:Mostrador.Altas.SIP_TextChanged(System.Object,System.EventArgs)">
+	<summary>
+SIP_TextChanged
+ Cambia el color del campo SIP.
+ </summary>
+</member><member name="M:Mostrador.Altas.Password_TextChanged(System.Object,System.EventArgs)">
+	<summary>
+Password_TextChanged
+ Cambia el color del campo Password y Password2.
+ </summary>
+</member><member name="M:Mostrador.Altas.DNI_TextChanged(System.Object,System.EventArgs)">
+	<summary>
+DNI_TextChanged
+ Cambia el color del campo DNI.
+ </summary>
+</member><member name="M:Mostrador.Altas.AltaPaciente_FormClosing(System.Object,System.Windows.Forms.FormClosingEventArgs)">
+	<summary>
+ AltaPaciente_FormClosing
+Evento FormClosing. Llama a la función Salir del mostrador.
+ </summary>
+</member><member name="P:Mostrador.Altas.IdSelec">
+	<summary>
+ IdSelec
+Id persona seleccionada al cargar datos por DNI existente..
+ </summary>
+</member><member name="T:Mostrador.Altas">
+	<summary>
+ Altas.vb
+ Formulario de altas y modificaciones de personas.
+ </summary>
+	<author> Ángel Valera</author>
+</member><member name="P:Mostrador.My.Resources.Resources.ResourceManager">
+	<summary>
+  Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
+</summary>
+</member><member name="P:Mostrador.My.Resources.Resources.Culture">
+	<summary>
+  Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
+  búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
+</summary>
+</member><member name="T:Mostrador.My.Resources.Resources">
+	<summary>
+  Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
+</summary>
+</member><member name="M:Mostrador.ConsultarColas.ConsultarDias_Load(System.Object,System.EventArgs)">
+	<summary>
+ ConsultarDias_Load
+ Evento OnLoad. Cargamos los datos de los festivos y añadimos los botones de eliminar.
+ </summary>
+</member><member name="M:Mostrador.ConsultarColas.DataGridView1_CellClick(System.Object,System.Windows.Forms.DataGridViewCellEventArgs)">
+	<summary>
+ DataGridView1_CellClick
+ Elimina el festivo seleccionado.
+ </summary>
+</member><member name="M:Mostrador.ConsultarColas.BtCerrar_Click(System.Object,System.EventArgs)">
+	<summary>
+ BtCerrar_Click
+Cierra la ventana.
+ </summary>
+</member><member name="M:Mostrador.ConsultarColas.ConsultarDias_FormClosing(System.Object,System.Windows.Forms.FormClosingEventArgs)">
+	<summary>
+ ConsultarDias_FormClosing
+Evento FormClosing. Llama a la función Salir del mostrador.
+ </summary>
+</member><member name="T:Mostrador.ConsultarColas">
+	<summary>
+ ConsultarDias.vb
+ Formulario que muestra todas las colas.
+ </summary>
+	<author> Ángel Valera</author>
+</member><member name="M:Mostrador.Mostrador.SalirToolStripMenuItem_Click(System.Object,System.EventArgs)">
+	<summary>
+ SalirToolStripMenuItem_Click.
+ Opción Salir. Cierra la aplicación
+ </summary>
+</member><member name="M:Mostrador.Mostrador.ConsultarDíasToolStripMenuItem_Click(System.Object,System.EventArgs)">
+	<summary>
+ ConsultarDíasToolStripMenuItem_Click
+Abre el formulario Consultar Días.
+ </summary>
+</member><member name="M:Mostrador.Mostrador.Form1_Load(System.Object,System.EventArgs)">
+	<summary>
+ Form1_Load
+Evento OnLoad. Convertimos el formulario en MDI.
+ </summary>
+</member><member name="M:Mostrador.Mostrador.SetBackGroundColorOfMDIForm">
+	<summary>
+ SetBackGroundColorOfMDIForm
+Cambia el color del formulario.
+ </summary>
+</member><member name="M:Mostrador.Mostrador.AñadirDiasToolStripMenuItem_Click(System.Object,System.EventArgs)">
+	<summary>
+ AñadirDiasToolStripMenuItem_Click
+Abre el formulario Añadir Días.
+ </summary>
+</member><member name="M:Mostrador.Mostrador.AltaToolStripMenuItem_Click(System.Object,System.EventArgs)">
+	<summary>
+ AltaToolStripMenuItem_Click
+Abre el formulario Altas como Paciente.
+ </summary>
+</member><member name="M:Mostrador.Mostrador.AltaToolStripMenuItem1_Click(System.Object,System.EventArgs)">
+	<summary>
+ AltaToolStripMenuItem_Click
+Abre el formulario Altas como Médico.
+ </summary>
+</member><member name="M:Mostrador.Mostrador.ConsultaToolStripMenuItem_Click(System.Object,System.EventArgs)">
+	<summary>
+ ConsultaToolStripMenuItem_Click
+Abre el formulario Buscar como Paciente.
+ </summary>
+</member><member name="M:Mostrador.Mostrador.ConsultaToolStripMenuItem1_Click(System.Object,System.EventArgs)">
+	<summary>
+ ConsultaToolStripMenuItem_Click
+Abre el formulario Buscar como Médico.
+ </summary>
+</member><member name="M:Mostrador.Mostrador.PorMédicoToolStripMenuItem_Click(System.Object,System.EventArgs)">
+	<summary>
+ PorPacienteToolStripMenuItem_Click
+Abre el formulario Buscar cita por Paciente.
+ </summary>
+</member><member name="M:Mostrador.Mostrador.PorPacienteToolStripMenuItem_Click(System.Object,System.EventArgs)">
+	<summary>
+ PorPacienteToolStripMenuItem_Click
+Abre el formulario Buscar cita por Paciente.
+ </summary>
+</member><member name="M:Mostrador.Mostrador.AñadirColaToolStripMenuItem_Click(System.Object,System.EventArgs)">
+	<summary>
+ AñadirColaToolStripMenuItem_Click
+Abre el formulario para añadir colas.
+ </summary>
+</member><member name="P:Mostrador.Mostrador.MenuSelec">
+	<summary>
+ MenuSelec. Opción seleccionado.
+ </summary>
+</member><member name="M:Mostrador.Mostrador.Form1_FormClosing(System.Object,System.Windows.Forms.FormClosingEventArgs)">
+	<summary>
+ Form1_FormClosing
+Evento Closing. Llama a la función Salir().
+ </summary>
+</member><member name="M:Mostrador.Mostrador.Salir(System.Windows.Forms.FormClosingEventArgs@)">
+	<summary>
+ Salir
+Cuadro de diálogo para cerrar aplicación.
+ </summary>
+</member><member name="M:Mostrador.Mostrador.CrearToolStripMenuItem_Click(System.Object,System.EventArgs)">
+	<summary>
+ CrearToolStripMenuItem_Click
+Crea una copia de seguridad de la base de datos.
+ </summary>
+</member><member name="M:Mostrador.Mostrador.ConsultarColaToolStripMenuItem_Click(System.Object,System.EventArgs)">
+	<summary>
+ ConsultarColaToolStripMenuItem_Click
+Abre el formulario para consultar las colas.
+ </summary>
+</member><member name="M:Mostrador.Mostrador.NuevaCitaToolStripMenuItem_Click(System.Object,System.EventArgs)">
+	<summary>
+ ConsultarColaToolStripMenuItem_Click
+Abre el formulario para búsqueda de pacientes para añadir citas.
+ </summary>
+</member><member name="T:Mostrador.Mostrador">
+	<summary>
+ Mostrador.vb
+ Formulario Principal de Mostrador
+ </summary>
+	<author> Ángel Valera</author>
+</member><member name="T:Mostrador.turnosDataSet1.citasDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Mostrador.turnosDataSet1.pacientesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Mostrador.turnosDataSet1.personasDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Mostrador.turnosDataSet1.citasRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Mostrador.turnosDataSet1.pacientesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Mostrador.turnosDataSet1.personasRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Mostrador.turnosDataSet1.citasRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Mostrador.turnosDataSet1.pacientesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Mostrador.turnosDataSet1.personasRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Mostrador.turnosDataSet1">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Mostrador.turnosDataSet1TableAdapters.citasTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Mostrador.turnosDataSet1TableAdapters.pacientesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Mostrador.turnosDataSet1TableAdapters.personasTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:Mostrador.turnosDataSet1TableAdapters.TableAdapterManager.UpdateUpdatedRows(Mostrador.turnosDataSet1,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:Mostrador.turnosDataSet1TableAdapters.TableAdapterManager.UpdateInsertedRows(Mostrador.turnosDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:Mostrador.turnosDataSet1TableAdapters.TableAdapterManager.UpdateDeletedRows(Mostrador.turnosDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:Mostrador.turnosDataSet1TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:Mostrador.turnosDataSet1TableAdapters.TableAdapterManager.UpdateAll(Mostrador.turnosDataSet1)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:Mostrador.turnosDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:Mostrador.turnosDataSet1TableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:Mostrador.turnosDataSet1TableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="M:Mostrador.ResultBusqueda.ListadoMedicos_Load(System.Object,System.EventArgs)">
+	<summary>
+ ListadoMedicos_Load. Hace que, al cargar el formulario, asignamos propiedades al DataGridViewButtonColumn.
+ </summary>
+</member><member name="M:Mostrador.ResultBusqueda.ListadoMed_CellClick(System.Object,System.Windows.Forms.DataGridViewCellEventArgs)">
+	<summary>
+ ListadoMed_CellClick. Hace que, al hacer clic en Mostrar, se abra el formulario de Altas con los datos de la persona seleccionada.
+ </summary>
+</member><member name="M:Mostrador.ResultBusqueda.ResultBusqueda_Enter(System.Object,System.EventArgs)">
+	<summary>
+ ResultBusqueda_Enter. Hace que, al entrar en el formulario, se muestren unas columnas determinadas con los datos de la búsqueda
+ </summary>
+</member><member name="P:Mostrador.ResultBusqueda.FilaSeleccionada">
+	<summary>
+Propiedad FilaSeleccionada (Integer) Fila seleccionada.
+</summary>
+</member><member name="T:Mostrador.ResultBusqueda">
+	<summary>
+ ResultBusqueda.vb
+ Contiene el formulario en el que se muestra un listado con los resultados encontrados.
+ </summary>
+	<author> Ángel Valera</author>
+</member><member name="T:Mostrador.turnosDataSet.direccionesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Mostrador.turnosDataSet.medicosDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Mostrador.turnosDataSet.pacientesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Mostrador.turnosDataSet.personasDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Mostrador.turnosDataSet.direccionesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Mostrador.turnosDataSet.medicosRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Mostrador.turnosDataSet.pacientesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Mostrador.turnosDataSet.personasRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Mostrador.turnosDataSet.direccionesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Mostrador.turnosDataSet.medicosRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Mostrador.turnosDataSet.pacientesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Mostrador.turnosDataSet.personasRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Mostrador.turnosDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Mostrador.turnosDataSetTableAdapters.direccionesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Mostrador.turnosDataSetTableAdapters.medicosTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Mostrador.turnosDataSetTableAdapters.pacientesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:Mostrador.turnosDataSetTableAdapters.personasTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:Mostrador.turnosDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(Mostrador.turnosDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:Mostrador.turnosDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(Mostrador.turnosDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:Mostrador.turnosDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(Mostrador.turnosDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:Mostrador.turnosDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:Mostrador.turnosDataSetTableAdapters.TableAdapterManager.UpdateAll(Mostrador.turnosDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:Mostrador.turnosDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:Mostrador.turnosDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:Mostrador.turnosDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="M:Mostrador.AnyadirCola.RellenarColas">
+	<summary>
+RellenarColas
+Rellenamos el combobox con el número de cola disponible.
+ </summary>
+</member><member name="M:Mostrador.AnyadirCola.Button1_Click(System.Object,System.EventArgs)">
+	<summary>
+Button1_Click
+Validamos los datos y añadimos la cola al sistema.
+ </summary>
+</member><member name="M:Mostrador.AnyadirCola.Button2_Click(System.Object,System.EventArgs)">
+	<summary>
+Button2_Click
+Cierra el formulario
+ </summary>
+</member><member name="M:Mostrador.AnyadirCola.AnyadirCola_Enter(System.Object,System.EventArgs)">
+	<summary>
+AnyadirCola_Enter
+Preparamos el combobox de colas disponibles y médicos de nuestro formulario
+ </summary>
+</member><member name="T:Mostrador.AnyadirCola">
+	<summary>
+ AnyadirCola.vb
+Formulario para añadir colas.
+ </summary>
+	<author> Ángel Valera</author>
+</member><member name="M:Mostrador.ConsultarDias.ConsultarDias_Load(System.Object,System.EventArgs)">
+	<summary>
+ ConsultarDias_Load
+ Evento OnLoad. Cargamos los datos de los festivos y añadimos los botones de eliminar.
+ </summary>
+</member><member name="M:Mostrador.ConsultarDias.DataGridView1_CellClick(System.Object,System.Windows.Forms.DataGridViewCellEventArgs)">
+	<summary>
+ DataGridView1_CellClick
+ Elimina el festivo seleccionado.
+ </summary>
+</member><member name="M:Mostrador.ConsultarDias.BtCerrar_Click(System.Object,System.EventArgs)">
+	<summary>
+ BtCerrar_Click
+Cierra la ventana.
+ </summary>
+</member><member name="M:Mostrador.ConsultarDias.ConsultarDias_FormClosing(System.Object,System.Windows.Forms.FormClosingEventArgs)">
+	<summary>
+ ConsultarDias_FormClosing
+Evento FormClosing. Llama a la función Salir del mostrador.
+ </summary>
+</member><member name="T:Mostrador.ConsultarDias">
+	<summary>
+ ConsultarDias.vb
+ Formulario que muestra todos los festivos del año actual
+ </summary>
+	<author> Ángel Valera</author>
+</member><member name="M:Mostrador.ListadoCitasMedico.ListadoCitasMedico_Load(System.Object,System.EventArgs)">
+	<summary>
+ ListadoCitasMedico_Load. Cargamos el origen de datos y los parámetros a nuestro informe.
+ </summary>
+</member><member name="T:Mostrador.ListadoCitasMedico">
+	<summary>
+ ListadoCitasMedico.vb
+Formulario para visualizar el listado de citas de un médico
+ </summary>
+	<author> Ángel Valera</author>
+</member><member name="M:Mostrador.AnyadirCita.Domingos">
+	<summary>
+Domingos
+ Calculamos el primer domingo desde la fecha actual y llamamos a la función MarcarDomingos.
+ </summary>
+</member><member name="M:Mostrador.AnyadirCita.MarcarDomingos(System.DateTime)">
+	<summary>
+ MarcarDomingos. Marca en negrita todos los domingos del calendario.
+ </summary>
+	<param name="Inicio">(Date)Primer Domingo.</param>
+</member><member name="M:Mostrador.AnyadirCita.MarcarFestivos">
+	<summary>
+MarcarFestivos
+ Marca en negrita todos los días festivos introducidos en el sistema.
+ </summary>
+</member><member name="M:Mostrador.AnyadirCita.AnyadirCita_Enter(System.Object,System.EventArgs)">
+	<summary>
+AnyadirCita_Enters
+Preparamos el formulario para añadir citas.
+ </summary>
+</member><member name="M:Mostrador.AnyadirCita.Resetear">
+	<summary>
+Resetear
+ Resetea las propiedades de los campos del formulario.
+ </summary>
+</member><member name="M:Mostrador.AnyadirCita.Button1_Click(System.Object,System.EventArgs)">
+	<summary>
+Button1_Click
+Validamos datos e intentamos introducir una cita en la base de datos.
+ Muestra el ticket si la cita se ha añadido con éxito.
+ </summary>
+</member><member name="M:Mostrador.AnyadirCita.TipoCita_CheckedChanged(System.Object,System.EventArgs)">
+	<summary>
+TipoCita_CheckedChanged
+Ocultamos el calendario en caso de marcar cita inmediata.
+ </summary>
+</member><member name="M:Mostrador.AnyadirCita.ComprobarFestivo(System.DateTime)">
+	<summary>
+ComprobarFestivo
+Comprobamos si la fecha seleccionada es Festivo
+ <param name="PFestivo">(Date)Fecha seleccionada.</param>
+	</summary>
+</member><member name="M:Mostrador.AnyadirCita.Rellenahoras">
+	<summary>
+Rellenahoras
+Función encargada de rellenar el ComboBox de horas únicamente con las horas disponibles para un día y una cola en concreto.
+ </summary>
+</member><member name="M:Mostrador.AnyadirCita.CBCola_SelectedIndexChanged(System.Object,System.EventArgs)">
+	<summary>
+ CBCola_SelectedIndexChanged
+Actualizamos el combobox de hora al cambiar de Cola.
+ </summary>
+</member><member name="M:Mostrador.AnyadirCita.Button2_Click(System.Object,System.EventArgs)">
+	<summary>
+ Button2_Click
+Cierra el formulario
+ </summary>
+</member><member name="M:Mostrador.AnyadirCita.Button4_Click(System.Object,System.EventArgs)">
+	<summary>
+ Button4_Click
+Abre el cuadro de diálogo de configuración de página para imprimir el ticket.
+ </summary>
+</member><member name="M:Mostrador.AnyadirCita.Button3_Click(System.Object,System.EventArgs)">
+	<summary>
+ Button4_Click
+Abre el cuadro de diálogo de configuración de impresora para imprimir el ticket.
+ </summary>
+</member><member name="M:Mostrador.AnyadirCita.PrintDocument1_PrintPage(System.Object,System.Drawing.Printing.PrintPageEventArgs)">
+	<summary>
+ PrintDocument1_PrintPage
+Diseño de nuestro ticket de cita.
+ </summary>
+</member><member name="M:Mostrador.AnyadirCita.VistaPrevia">
+	<summary>
+ VistaPrevia
+Muestra la Vista Previa del ticket de cita.
+ </summary>
+</member><member name="M:Mostrador.AnyadirCita.MonthCalendar1_DateChanged(System.Object,System.Windows.Forms.DateRangeEventArgs)">
+	<summary>
+ MonthCalendar1_DateChanged
+Actualizamos el combobox de horas al actualizar la fecha.
+ </summary>
+</member><member name="T:Mostrador.AnyadirCita">
+	<summary>
+ AnyadirCita.vb
+Formulario para añadir citas.
+ </summary>
+	<author> Ángel Valera</author>
+</member><member name="M:Mostrador.AnyadirDias.AnyadirDias_Load(System.Object,System.EventArgs)">
+	<summary>
+ AnyadirDias_Load.
+Evento OnLoad. Ajustamos los límites del calendario al año actual.
+ </summary>
+</member><member name="M:Mostrador.AnyadirDias.AnyadirFestivo_Click(System.Object,System.EventArgs)">
+	<summary>
+ AnyadirFestivo_Click
+Añade Festivo.
+ </summary>
+</member><member name="M:Mostrador.AnyadirDias.CancelarFestivo_Click(System.Object,System.EventArgs)">
+	<summary>
+ CancelarFestivo_Click
+Cierra la ventana.
+ </summary>
+</member><member name="M:Mostrador.AnyadirDias.AnyadirDias_FormClosing(System.Object,System.Windows.Forms.FormClosingEventArgs)">
+	<summary>
+ AnyadirDias_FormClosing
+Evento FormClosing. Llama a la función Salir del mostrador.
+ </summary>
+</member><member name="T:Mostrador.AnyadirDias">
+	<summary>
+ AnyadirDias.vb
+Formulario para añadir días festivos.
+ </summary>
+	<author> Ángel Valera</author>
+</member><member name="M:Mostrador.ConsultarCitas.ConsultarDias_Load(System.Object,System.EventArgs)">
+	<summary>
+ ConsultarDias_Load
+ Evento OnLoad. Cargamos los datos de las citas y añadimos los botones de eliminar y actualizar.
+ </summary>
+</member><member name="M:Mostrador.ConsultarCitas.Resetear">
+	<summary>
+ Resetear
+ Resetea las propiedades de los controles del formulario.
+ </summary>
+</member><member name="M:Mostrador.ConsultarCitas.DataGridView1_CellClick(System.Object,System.Windows.Forms.DataGridViewCellEventArgs)">
+	<summary>
+ DataGridView1_CellClick
+ Controla los botones de eliminar y actualizar cita.
+ </summary>
+</member><member name="M:Mostrador.ConsultarCitas.ComprobarFestivo(System.DateTime)">
+	<summary>
+ComprobarFestivo
+Comprobamos si la fecha seleccionada es Festivo
+ <param name="PFestivo">(Date)Fecha seleccionada.</param>
+	</summary>
+</member><member name="M:Mostrador.ConsultarCitas.Rellenahoras(System.DateTime,System.Int32)">
+	<summary>
+Rellenahoras
+Función encargada de rellenar el ComboBox de horas únicamente con las horas disponibles para un día y una cola en concreto.
+ </summary>
+	<param name="Fecha">(Date) Fecha cita</param>
+	<param name=" Pcola ">(Integer) Cola cita</param>
+</member><member name="M:Mostrador.ConsultarCitas.BtCerrar_Click(System.Object,System.EventArgs)">
+	<summary>
+ BtCerrar_Click
+Cierra la ventana.
+ </summary>
+</member><member name="M:Mostrador.ConsultarCitas.ConsultarDias_FormClosing(System.Object,System.Windows.Forms.FormClosingEventArgs)">
+	<summary>
+ ConsultarDias_FormClosing
+Evento FormClosing. Llama a la función Salir del mostrador.
+ </summary>
+</member><member name="M:Mostrador.ConsultarCitas.ListadoCitas_RowEnter(System.Object,System.Windows.Forms.DataGridViewCellEventArgs)">
+	<summary>
+ListadoCitas_RowEnter
+Función encargada de rellenar el ComboBox de horas únicamente con las horas disponibles para un día y una cola en concreto al cambiar de cita.
+ </summary>
+</member><member name="M:Mostrador.ConsultarCitas.CBHora_SelectedIndexChanged(System.Object,System.EventArgs)">
+	<summary>
+CBHora_SelectedIndexChanged
+Función encargada de actualizar la hora del datagrid al cambiar de hora en el combobox
+ </summary>
+</member><member name="M:Mostrador.ConsultarCitas.DPFecha_ValueChanged(System.Object,System.EventArgs)">
+	<summary>
+DPFecha_ValueChanged
+Función encargada de actualizar datagridview con las citas del médico al cambiar de fecha en el combobox
+ </summary>
+</member><member name="M:Mostrador.ConsultarCitas.Button1_Click(System.Object,System.EventArgs)">
+	<summary>
+Button1_Click
+Función encargada de pasar los datos del datagridview al Reportviewer del formulario ListadoCitasMedico
+ </summary>
+</member><member name="T:Mostrador.ConsultarCitas">
+	<summary>
+ ConsultarDias.vb
+ Formulario que muestra todas las citas.
+ </summary>
+	<author> Ángel Valera</author>
+</member><member name="M:Mostrador.Buscar.Button1_Click(System.Object,System.EventArgs)">
+	<summary>
+ Button1_Click
+ Almacena la cadena de búsqueda y llama al formulario ResultBusqueda
+ </summary>
+</member><member name="M:Mostrador.Buscar.Buscar_Enter(System.Object,System.EventArgs)">
+	<summary>
+ Buscar_Enter
+ Evento On Enter. Asignamos el título del formulario dependiendo de desde qué opción llamemos al buscador.
+ </summary>
+</member><member name="M:Mostrador.Buscar.Resetear">
+	<summary>
+Resetear
+ Resetea las propiedades de los campos del formulario.
+ </summary>
+</member><member name="M:Mostrador.Buscar.Button2_Click(System.Object,System.EventArgs)">
+	<summary>
+ Button2_Click
+Cierra la ventana.
+ </summary>
+</member><member name="M:Mostrador.Buscar.BuscarMedico_FormClosing(System.Object,System.Windows.Forms.FormClosingEventArgs)">
+	<summary>
+ AnyadirDias_FormClosing
+Evento FormClosing. Llama a la función Salir del mostrador.
+ </summary>
+</member><member name="T:Mostrador.Buscar">
+	<summary>
+ Buscar.vb
+ Formulario Búsqueda.
+ </summary>
+	<author> Ángel Valera</author>
+</member>
+</members>
+</doc>

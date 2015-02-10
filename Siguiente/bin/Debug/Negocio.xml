@@ -1,0 +1,317 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Negocio
+</name>
+</assembly>
+<members>
+<member name="M:Negocio.NegocioSiguiente.ConsultarCitasMedico(System.String,System.DateTime)">
+	<summary>
+ ConsultarCitasMedico. Consulta los datos de las citas de un médico en un día.
+ </summary>
+	<param name="PId ">(String)Número Colegiado.</param>
+	<param name="Pfecha ">(String)Fecha.</param>
+	<returns>(DataTable). DataTable con todos los datos de todos las citas de un médico en un día determinado</returns>
+</member><member name="M:Negocio.NegocioMostrador.ConsultarPersona(System.String@)">
+	<summary>
+ ConsultarPersona. Consulta si una persona existe en nuestra base de datos.
+ </summary>
+	<param name="PNif">(String)Nif Persona.</param>
+	<returns>(DataTable) Result. DataTable con todos los datos de la persona devuelto por la consulta.</returns>
+</member><member name="M:Negocio.NegocioMostrador.InsertarFestivo(System.DateTime,System.String)">
+	<summary>
+ InsertarFestivo. Inserta los datos de un festivo.
+ </summary>
+	<param name="PNombre">(String)Nombre Persona.</param>
+	<param name="PFecha ">(String)Municipio.</param>
+	<returns>(Integer) Integer. 1 indica que la inserción ha sido correcta, 0 Incorrecta.</returns>
+</member><member name="M:Negocio.NegocioMostrador.ConsultarFestivos">
+	<summary>
+ ConsultarFestivo. Consulta los datos de los festivo.
+ </summary>
+	<returns>(DataTable). DataTable con todos los datos de todos los festivos del año actual</returns>
+</member><member name="M:Negocio.NegocioMostrador.ConsultarFestivo(System.DateTime)">
+	<summary>
+ ConsultarFestivo. Consulta los datos de los festivo.
+ </summary>
+	<returns>(DataTable). DataTable con todos los datos de todos los festivos del año actual</returns>
+</member><member name="M:Negocio.NegocioMostrador.EliminarFestivo(System.Int32)">
+	<summary>
+ EliminarFestivo. Elimina un festivo determinado por su Id.
+ </summary>
+	<param name="PId ">(Integer)Id Festivo.</param>
+	<returns>(Integer) Integer. 1 indica que la eliminación ha sido correcta, 0 Incorrecta.</returns>
+</member><member name="M:Negocio.NegocioMostrador.UpdatePaciente(System.Int32,System.String,System.String,System.String,System.String,System.String,System.Int32,System.UInt64,System.String,System.String,System.String,System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ UpdatePaciente. Actualiza los datos de un paciente.
+ </summary>
+	<param name="PNombre">(String)Nombre Persona.</param>
+	<param name="PApellidos">(String)Apellidos Persona.</param>
+	<param name="PNif ">(String)NIF Persona.</param>
+	<param name="PEmail ">(String)Email Persona.</param>
+	<param name="PTelefono ">(String)Teléfono Persona.</param>
+	<param name="PBaja ">(Boolean)Situación Baja de Persona.</param>
+	<param name="PSip">(ULong)SIP paciente.</param>
+	<param name="PTipoVia">(String)Tipo Vía.</param>
+	<param name="PVia">(String)Nombre Vía.</param>
+	<param name="PNumero">(String)Número Vía.</param>
+	<param name="PKilometro">(Integer)Kilómetro Vía.</param>
+	<param name="PHectometro">(Integer)Hectómetro Vía.</param>
+	<param name="PBloque">(String)Bloque Vía.</param>
+	<param name="PPortal">(String)Portal Vía.</param>
+	<param name="PEscalera">(String)Escalera.</param>
+	<param name="Pplanta">(String)Planta.</param>
+	<param name="PPuerta">(String)Puerta.</param>
+	<param name="PLocalidad">(String)Localidad.</param>
+	<param name="PMunicipio">(String)Municipio.</param>
+	<param name="PProvincia">(String)Provincia.</param>
+	<param name="PCodPostal">(String)Código Postal.</param>
+	<param name="PId ">(Integer)Id Persona.</param>
+	<returns>(Integer) Integer. 1 indica que el update ha sido correcto, 0 Incorrecto.</returns>
+</member><member name="M:Negocio.NegocioMostrador.InsertarPaciente(System.String,System.String,System.String,System.String,System.String,System.Int32,System.UInt64,System.String,System.String,System.String,System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ InsertarPaciente. Inserta los datos de un paciente.
+ </summary>
+	<param name="PNombre">(String)Nombre Persona.</param>
+	<param name="PApellidos">(String)Apellidos Persona.</param>
+	<param name="PNif ">(String)NIF Persona.</param>
+	<param name="PEmail ">(String)Email Persona.</param>
+	<param name="PTelefono ">(String)Teléfono Persona.</param>
+	<param name="PBaja ">(Boolean)Situación Baja de Persona.</param>
+	<param name="PSip">(ULong)SIP paciente.</param>
+	<param name="PTipoVia">(String)Tipo Vía.</param>
+	<param name="PVia">(String)Nombre Vía.</param>
+	<param name="PNumero">(String)Número Vía.</param>
+	<param name="PKilometro">(Integer)Kilómetro Vía.</param>
+	<param name="PHectometro">(Integer)Hectómetro Vía.</param>
+	<param name="PBloque">(String)Bloque Vía.</param>
+	<param name="PPortal">(String)Portal Vía.</param>
+	<param name="PEscalera">(String)Escalera.</param>
+	<param name="Pplanta">(String)Planta.</param>
+	<param name="PPuerta">(String)Puerta.</param>
+	<param name="PLocalidad">(String)Localidad.</param>
+	<param name="PMunicipio">(String)Municipio.</param>
+	<param name="PProvincia">(String)Provincia.</param>
+	<param name="PCodPostal">(String)Código Postal.</param>
+	<returns>(Integer) Integer. 1 indica que la inserción ha sido correcta, 0 Incorrecta.</returns>
+</member><member name="M:Negocio.NegocioMostrador.BuscarPacientes(System.String@)">
+	<summary>
+ BuscarPacientes. Busca los datos de pacientes.
+ </summary>
+	<param name="PBusqueda">(String)Cadena de búsqueda.</param>
+	<returns>(DataTable). DataTable con todos los datos de los pacientes que coincidan con el criterio de búsqueda.</returns>
+</member><member name="M:Negocio.NegocioMostrador.InsertarMedico(System.String,System.String,System.String,System.String,System.String,System.Int32,System.String,System.String,System.String,System.String,System.String,System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ InsertarMedico. Inserta los datos de un médico.
+ </summary>
+	<param name="PNombre">(String)Nombre Persona.</param>
+	<param name="PApellidos">(String)Apellidos Persona.</param>
+	<param name="PNif ">(String)NIF Persona.</param>
+	<param name="PEmail ">(String)Email Persona.</param>
+	<param name="PTelefono ">(String)Teléfono Persona.</param>
+	<param name="PBaja ">(Boolean)Situación Baja de Persona.</param>
+	<param name="PNumColegiado ">(ULong)Nº Colegiado del médico.</param>
+	<param name="PTipoVia">(String)Tipo Vía.</param>
+	<param name="PVia">(String)Nombre Vía.</param>
+	<param name="PNumero">(String)Número Vía.</param>
+	<param name="PKilometro">(Integer)Kilómetro Vía.</param>
+	<param name="PHectometro">(Integer)Hectómetro Vía.</param>
+	<param name="PBloque">(String)Bloque Vía.</param>
+	<param name="PPortal">(String)Portal Vía.</param>
+	<param name="PEscalera">(String)Escalera.</param>
+	<param name="Pplanta">(String)Planta.</param>
+	<param name="PPuerta">(String)Puerta.</param>
+	<param name="PLocalidad">(String)Localidad.</param>
+	<param name="PMunicipio">(String)Municipio.</param>
+	<param name="PProvincia">(String)Provincia.</param>
+	<param name="PCodPostal">(String)Código Postal.</param>
+	<param name="PPassword ">(String)Password Médico.</param>
+	<returns>(Integer) Integer. 1 indica que la inserción ha sido correcta, 0 Incorrecta.</returns>
+</member><member name="M:Negocio.NegocioMostrador.UpdateMedico(System.Int32,System.String,System.String,System.String,System.String,System.String,System.Int32,System.String,System.String,System.String,System.String,System.String,System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ UpdateMedico. Inserta los datos de un médico.
+ </summary>
+	<param name="PId">(Integer)Id Médico.</param>
+	<param name="PNombre">(String)Nombre Persona.</param>
+	<param name="PApellidos">(String)Apellidos Persona.</param>
+	<param name="PNif ">(String)NIF Persona.</param>
+	<param name="PEmail ">(String)Email Persona.</param>
+	<param name="PTelefono ">(String)Teléfono Persona.</param>
+	<param name="PBaja ">(Boolean)Situación Baja de Persona.</param>
+	<param name="PNumColegiado ">(ULong)Nº Colegiado del médico.</param>
+	<param name="PTipoVia">(String)Tipo Vía.</param>
+	<param name="PVia">(String)Nombre Vía.</param>
+	<param name="PNumero">(String)Número Vía.</param>
+	<param name="PKilometro">(Integer)Kilómetro Vía.</param>
+	<param name="PHectometro">(Integer)Hectómetro Vía.</param>
+	<param name="PBloque">(String)Bloque Vía.</param>
+	<param name="PPortal">(String)Portal Vía.</param>
+	<param name="PEscalera">(String)Escalera.</param>
+	<param name="Pplanta">(String)Planta.</param>
+	<param name="PPuerta">(String)Puerta.</param>
+	<param name="PLocalidad">(String)Localidad.</param>
+	<param name="PMunicipio">(String)Municipio.</param>
+	<param name="PProvincia">(String)Provincia.</param>
+	<param name="PCodPostal">(String)Código Postal.</param>
+	<param name="PPassword ">(String)Password Médico.</param>
+	<returns>(Integer) Integer. 1 indica que la inserción ha sido correcta, 0 Incorrecta.</returns>
+</member><member name="M:Negocio.NegocioMostrador.BuscarMedicos(System.String@)">
+	<summary>
+ BuscarMedicos. Busca los datos de médicos.
+ </summary>
+	<param name="PBusqueda">(String)Cadena de búsqueda.</param>
+	<returns>(DataTable). DataTable con todos los datos de los médicos que coincidan con el criterio de búsqueda.</returns>
+</member><member name="M:Negocio.NegocioMostrador.ListarMedicos">
+	<summary>
+ ListarMedicos. Busca los datos de médicos.
+ </summary>
+	<returns>(DataTable). DataTable con todos los datos de los médicos que coincidan con el criterio de búsqueda.</returns>
+</member><member name="M:Negocio.NegocioMostrador.InsertarDireccion(System.Int32,System.String,System.String,System.String,System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ InsertarDireccion. Inserta los datos de dirección de un paciente o médico.
+ </summary>
+	<param name="Pid">(String)Id Persona.</param>
+	<param name="PTipoVia">(String)Tipo Vía.</param>
+	<param name="PVia">(String)Nombre Vía.</param>
+	<param name="PNumero">(String)Número Vía.</param>
+	<param name="PKilometro">(Integer)Kilómetro Vía.</param>
+	<param name="PHectometro">(Integer)Hectómetro Vía.</param>
+	<param name="PBloque">(String)Bloque Vía.</param>
+	<param name="PPortal">(String)Portal Vía.</param>
+	<param name="PEscalera">(String)Escalera.</param>
+	<param name="Pplanta">(String)Planta.</param>
+	<param name="PPuerta">(String)Puerta.</param>
+	<param name="PLocalidad">(String)Localidad.</param>
+	<param name="PMunicipio">(String)Municipio.</param>
+	<param name="PProvincia">(String)Provincia.</param>
+	<param name="PCodPostal">(String)Código Postal.</param>
+</member><member name="M:Negocio.NegocioMostrador.UpdateDireccion(System.Int32,System.String,System.String,System.String,System.Int32,System.Int32,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ UpdateDireccion. Actualiza los datos de dirección de un paciente o médico.
+ </summary>
+	<param name="Pid">(String)Id Persona.</param>
+	<param name="PTipoVia">(String)Tipo Vía.</param>
+	<param name="PVia">(String)Nombre Vía.</param>
+	<param name="PNumero">(String)Número Vía.</param>
+	<param name="PKilometro">(Integer)Kilómetro Vía.</param>
+	<param name="PHectometro">(Integer)Hectómetro Vía.</param>
+	<param name="PBloque">(String)Bloque Vía.</param>
+	<param name="PPortal">(String)Portal Vía.</param>
+	<param name="PEscalera">(String)Escalera.</param>
+	<param name="Pplanta">(String)Planta.</param>
+	<param name="PPuerta">(String)Puerta.</param>
+	<param name="PLocalidad">(String)Localidad.</param>
+	<param name="PMunicipio">(String)Municipio.</param>
+	<param name="PProvincia">(String)Provincia.</param>
+	<param name="PCodPostal">(String)Código Postal.</param>
+</member><member name="M:Negocio.NegocioMostrador.CopiaSeguridad">
+	<summary>
+ CopiaSeguridad. Realiza una copia de seguridad en formato XML con todos los datos de la base de datos.
+ </summary>
+</member><member name="M:Negocio.NegocioMostrador.InsertarCola(System.Int32,System.String,System.Int32)">
+	<summary>
+ InsertarCola. Inserta los datos de una nueva cola.
+ </summary>
+	<param name="PNumCola">(String)Numero Cola.</param>
+	<param name="PNumMesa">(String)Nombre Mesa.</param>
+	<param name="PMedicoId ">(String)Id Médico.</param>
+	<returns>(Integer) Integer. 1 indica que la inserción ha sido correcta, 0 Incorrecta.</returns>
+</member><member name="M:Negocio.NegocioMostrador.ConsultarColas">
+	<summary>
+ ConsultarColas. Consulta los datos de las Colas.
+ </summary>
+	<returns>(DataTable). DataTable con todos los datos de todos las colas.</returns>
+</member><member name="M:Negocio.NegocioMostrador.EliminarCola(System.Int32)">
+	<summary>
+ EliminarCola. Elimina una cola determinado por su Id.
+ </summary>
+	<param name="PId ">(Integer)Id Cola.</param>
+	<returns>(Integer) Integer. 1 indica que la eliminación ha sido correcta, 0 Incorrecta.</returns>
+</member><member name="M:Negocio.NegocioMostrador.ActualizarCola(System.Int32,System.Int32,System.String,System.Int32)">
+	<summary>
+ ActualizarCola. Actualiza una cola determinada por su Id.
+ </summary>
+	<param name="PId ">(Integer)Id Cola.</param>
+	<param name="PMedicoId">(Integer)Id Médico.</param>
+	<param name="PNumeroCola">(Integer)Numero Cola.</param>
+	<param name="PNumMesa">(String)Nombre Cola.</param>
+	<returns>(Integer) Integer. 1 indica que la eliminación ha sido correcta, 0 Incorrecta.</returns>
+</member><member name="M:Negocio.NegocioMostrador.InsertarCita(System.DateTime,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+	<summary>
+ InsertaCita. Inserta los datos de una nueva cita.
+ </summary>
+	<param name="PFecha ">(Date)Numero cita.</param>
+	<param name="PDuracion ">(Integer)Duracion Cita.</param>
+	<param name="PTerminada ">(Integer)Cita Terminada.</param>
+	<param name="PTipoCita  ">(Integer)Tipo Cita.</param>
+	<param name="PColaId ">(Integer)Id Cola.</param>
+	<param name="PPacienteId ">(Integer)Id Paciente.</param>
+	<returns>(Integer) Integer. 1 indica que la inserción ha sido correcta, 0 Incorrecta.</returns>
+</member><member name="M:Negocio.NegocioMostrador.ListadoHoras(System.DateTime,System.Int32)">
+	<summary>
+ ListadoHoras. Consulta las citas por fecha y cola
+ </summary>
+	<param name="PFecha ">(Date)Fecha cita.</param>
+	<param name="PColaId ">(Integer)Id Cola.</param>
+	<returns>(DataTable) Datatable con todas las citas por fecha y cola.</returns>
+</member><member name="M:Negocio.NegocioMostrador.ConsultarCitasPaciente(System.String)">
+	<summary>
+ ConsultarCitasPaciente. Consulta los datos de las citas de un paciente.
+ </summary>
+	<param name="PId ">(String)SIP Paciente.</param>
+	<returns>(DataTable). DataTable con todos los datos de todos las citas de un paciente</returns>
+</member><member name="M:Negocio.NegocioMostrador.ConsultarCitasMedico(System.String,System.DateTime)">
+	<summary>
+ ConsultarCitasMedico. Consulta los datos de las citas de un médico en un día.
+ </summary>
+	<param name="PId ">(String)Número Colegiado.</param>
+	<param name="Pfecha ">(String)Fecha.</param>
+	<returns>(DataTable). DataTable con todos los datos de todos las citas de un médico en un día determinado</returns>
+</member><member name="M:Negocio.NegocioMostrador.EliminarCita(System.Int32)">
+	<summary>
+ EliminarCita. Elimina una cita determinado por su Id.
+ </summary>
+	<param name="PId ">(Integer)Id Cita.</param>
+	<returns>(Integer) Integer. 1 indica que la eliminación ha sido correcta, 0 Incorrecta.</returns>
+</member><member name="M:Negocio.NegocioMostrador.EliminarCitaPorCola(System.Int32)">
+	<summary>
+ EliminarCitaPorCola. Elimina las citas determinadas por su Id de cola.
+ </summary>
+	<param name="PColaId ">(Integer)Id Cita.</param>
+	<returns>(Integer) Integer. 1 indica que la eliminación ha sido correcta, 0 Incorrecta.</returns>
+</member><member name="M:Negocio.NegocioMostrador.ActualizarCita(System.Int32,System.DateTime,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+	<summary>
+ ActualizarCita. Actualiza una cita.
+ </summary>
+	<param name="Fecha ">(Date)Numero cita.</param>
+	<param name="PHora ">(Date)Numero cita.</param>
+	<param name="PDuracion ">(Integer)Duracion Cita.</param>
+	<param name="PTerminada ">(Integer)Cita Terminada.</param>
+	<param name="PTipoCita  ">(Integer)Tipo Cita.</param>
+	<param name="PColaId ">(Integer)Id Cola.</param>
+	<param name="PPacienteId ">(Integer)Id Paciente.</param>
+	<returns>(Integer) Integer. 1 indica que la actualización ha sido correcta, 0 Incorrecta.</returns>
+</member><member name="T:Negocio.NegocioMostrador">
+	<summary>
+ NegocioMostrador.vb
+ Contiene la capa de negocio del proyecto Mostrador
+ Encargada de hacer peticiones a la capa de datos y devolver la información a presentación
+ </summary>
+	<author> Ángel Valera</author>
+</member><member name="P:Negocio.My.Resources.Resources.ResourceManager">
+	<summary>
+  Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
+</summary>
+</member><member name="P:Negocio.My.Resources.Resources.Culture">
+	<summary>
+  Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
+  búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
+</summary>
+</member><member name="T:Negocio.My.Resources.Resources">
+	<summary>
+  Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
+</summary>
+</member>
+</members>
+</doc>

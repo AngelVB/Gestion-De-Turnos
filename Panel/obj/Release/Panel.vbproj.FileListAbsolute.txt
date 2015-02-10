@@ -1,0 +1,31 @@
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Panel\bin\Release\Panel.exe.config
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Panel\obj\Release\MainWindow.baml
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Panel\obj\Release\MainWindow.g.vb
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Panel\obj\Release\Application.g.vb
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Panel\obj\Release\Panel_MarkupCompile.cache
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Panel\obj\Release\Panel.g.resources
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Panel\obj\Release\Panel.Resources.resources
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Panel\obj\Release\Panel.vbproj.GenerateResource.Cache
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Mostrador\bin\Release\Panel.exe.config
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Mostrador\bin\Release\Panel.exe
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Mostrador\bin\Release\Panel.pdb
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Mostrador\bin\Release\Panel.xml
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Panel\obj\Release\Panel.vbprojResolveAssemblyReference.cache
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Panel\obj\Release\Panel.exe
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Panel\obj\Release\Panel.xml
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega3\Gestion de Turnos\Panel\obj\Release\Panel.pdb
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega 4\Gestion de Turnos\Mostrador\bin\Release\Panel.exe.config
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega 4\Gestion de Turnos\Panel\obj\Release\Panel.exe
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega 4\Gestion de Turnos\Panel\obj\Release\Panel.xml
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega 4\Gestion de Turnos\Panel\obj\Release\Panel.pdb
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega 4\Gestion de Turnos\Mostrador\bin\Release\Panel.exe
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega 4\Gestion de Turnos\Mostrador\bin\Release\Panel.pdb
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega 4\Gestion de Turnos\Mostrador\bin\Release\Panel.xml
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega 4\Gestion de Turnos\Panel\obj\Release\Panel.vbprojResolveAssemblyReference.cache
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega 4\Gestion de Turnos\Panel\obj\Release\MainWindow.baml
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega 4\Gestion de Turnos\Panel\obj\Release\MainWindow.g.vb
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega 4\Gestion de Turnos\Panel\obj\Release\Application.g.vb
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega 4\Gestion de Turnos\Panel\obj\Release\Panel_MarkupCompile.cache
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega 4\Gestion de Turnos\Panel\obj\Release\Panel.g.resources
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega 4\Gestion de Turnos\Panel\obj\Release\Panel.Resources.resources
+C:\Users\Angel\Dropbox\DAM\Segundo\Interfaces\Trimestre2\Entrega 4\Gestion de Turnos\Panel\obj\Release\Panel.vbproj.GenerateResource.Cache
